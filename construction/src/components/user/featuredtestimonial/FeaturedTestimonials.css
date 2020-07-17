@@ -45,9 +45,19 @@
 	color: var(--main_bg);
 }
 
+@media all and (min-width: 480px) and (max-width: 768px) {
+	.ftDescription {
+		width: 75%;
+	}
+}
+
 @media all and (max-width: 480px) {
 	.ftContent {
 		width: 98%;
 		margin: 2% 1%;
+	}
+	.ftDescription {
+		width: 75%;
+		font-size: 1.5rem;
 	}
 }

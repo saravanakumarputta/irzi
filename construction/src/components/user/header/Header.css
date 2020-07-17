@@ -30,11 +30,11 @@
 	max-width: 100px;
 }
 
-.wid_70 {
+/* .wid_70 {
 	flex-basis: 70%;
 	padding-left: 15px;
 	padding-right: 15px;
-}
+} */
 .menu-icon {
 	display: none;
 }
@@ -73,6 +73,21 @@
 .reMenuActive {
 	font-weight: 800 !important;
 	text-indent: 10px;
+}
+
+.headerDetail {
+	width: 70%;
+}
+
+@media all and (min-width: 480px) and (max-width: 768px) {
+	.uHeaderWrapper {
+		flex-direction: column;
+	}
+
+	.headerDetail {
+		margin: 1rem 0;
+		width: 100%;
+	}
 }
 
 @media all and (max-width: 480px) {

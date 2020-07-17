@@ -9,7 +9,7 @@ export default function Header() {
 	return (
 		<div className="uHeaderContainer bg-light">
 			<div className="sectionContainer mauto">
-				<div className="dflex alignBetween alignVertical">
+				<div className="dflex alignBetween alignVertical uHeaderWrapper">
 					<div className="logo">
 						<img src={logo} alt="IrZi" />
 					</div>

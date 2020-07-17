@@ -31,11 +31,22 @@
 	color: var(--main_bg);
 }
 .footer-section {
-	width: 31%;
+	width: 25%;
 	justify-content: space-evenly;
 }
 .addrText {
 	line-height: 1.5rem;
+}
+
+.qec_logo {
+	background-color: #fff;
+	max-width: 200px;
+}
+
+@media all and (min-width: 480px) and (max-width: 768px) {
+	.qec_logo {
+		max-width: 150px;
+	}
 }
 
 @media all and (max-width: 480px) {
