@@ -1,0 +1,53 @@
+.ftLeadTextContainer {
+	text-align: center;
+	margin-bottom: 2rem;
+}
+
+.ftTitle {
+	font-weight: 300;
+	color: var(--main_bg);
+	text-transform: uppercase;
+	font-size: 1.3rem;
+}
+
+.ftDescription {
+	font-size: 2rem;
+	font-weight: 300;
+	width: 40%;
+	margin: 0 auto;
+}
+
+.ftContent {
+	text-align: center;
+	background: #f1f1f1;
+	padding: 15px;
+	border-radius: 50px 0;
+	width: 46%;
+	margin: 0 2% 0 2%;
+}
+.ftContent img {
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	margin-bottom: 20px;
+}
+.ftContent blockquote p {
+	font-size: 16px;
+	color: #000;
+	font-weight: 700;
+	max-width: 80%;
+	margin: 0 auto;
+}
+
+.ftClientName {
+	text-transform: uppercase;
+	font-size: 1.2rem;
+	color: var(--main_bg);
+}
+
+@media all and (max-width: 480px) {
+	.ftContent {
+		width: 98%;
+		margin: 2% 1%;
+	}
+}

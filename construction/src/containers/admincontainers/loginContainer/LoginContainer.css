@@ -1,0 +1,63 @@
+.loginContainer {
+	background: #fff;
+	width: 400px;
+	margin: 0 auto;
+}
+
+.loginTitle {
+	padding: 15px;
+	border-bottom: 1px solid #ccc;
+}
+
+.loginForm {
+	padding: 15px;
+}
+
+.verrMsg {
+	color: #ff0000;
+	font-size: 14px;
+	margin: 5px 0;
+}
+.pd15 {
+	padding: 15px;
+}
+
+.brandTagline {
+	padding-left: 10px;
+	font-size: 18px;
+	font-weight: 800;
+	color: #2b6e46;
+}
+
+.loginText {
+	padding: 15px 15px 0 15px;
+}
+
+.welcomeText {
+	font-weight: 700;
+	color: #4b4b5a;
+}
+
+.welcomeMsg {
+	font-size: 14px;
+	color: #6c757d;
+	font-weight: 600;
+}
+
+.btn {
+	background: #3b4796;
+	color: #fff;
+	padding: 10px;
+	border-radius: 3px;
+}
+
+.loginErrMsg {
+	margin: 15px 15px 0 15px;
+}
+
+@media all and (max-width: 480px) {
+	.loginContainer {
+		width: 98%;
+		height: 100%;
+	}
+}

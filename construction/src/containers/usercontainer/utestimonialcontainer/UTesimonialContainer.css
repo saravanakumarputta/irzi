@@ -1,0 +1,11 @@
+.utestimonailHolder {
+	width: 48%;
+	margin: 1%;
+}
+
+@media all and (max-width: 480px) {
+	.utestimonailHolder {
+		width: 98%;
+		margin: 1%;
+	}
+}

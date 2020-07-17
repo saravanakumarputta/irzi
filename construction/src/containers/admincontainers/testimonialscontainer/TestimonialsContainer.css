@@ -1,0 +1,36 @@
+.testimonialContainer {
+	border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+	padding: 15px;
+}
+
+.testimonialUser {
+	margin-top: 12px;
+}
+
+.testimonialAction {
+	border-top: 1px solid #ebf0f5;
+	padding-top: 10px;
+}
+
+.testimonialChips {
+	padding-right: 5px;
+}
+
+.testimonialFeedback {
+	font-weight: 400;
+	color: #403e3e;
+}
+
+.testimionialContent {
+	margin-bottom: 10px;
+}
+
+.noContent {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+	font-size: 20px;
+	font-weight: 800;
+	color: #8c8c8e;
+}

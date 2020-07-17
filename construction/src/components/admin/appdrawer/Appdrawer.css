@@ -1,0 +1,45 @@
+.appdrawerContainer {
+	position: fixed;
+	right: -420px;
+	width: 420px;
+	height: 100%;
+	background: #fff;
+	top: 0;
+	transition: all 0.2s;
+	z-index: 999;
+}
+
+.appdrawerHeader {
+	height: 60px;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+}
+
+.appdrawerClose {
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	background-color: rgba(0, 0, 0, 0.125);
+	text-align: center;
+	position: relative;
+}
+
+.closeAction {
+	padding: 10px;
+}
+
+.closeIcon {
+	position: absolute;
+	top: 10px;
+	right: 15px;
+}
+.title {
+	padding: 20px;
+	font-weight: 600;
+}
+
+@media all and (max-width: 480px) {
+	.appdrawerContainer {
+		width: 100%;
+		right: -100%;
+	}
+}

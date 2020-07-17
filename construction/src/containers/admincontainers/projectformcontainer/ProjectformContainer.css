@@ -1,0 +1,60 @@
+.form-input {
+	width: 100%;
+	height: 34px;
+	padding: 6px 12px;
+	line-height: 1.428;
+	font-size: 14px;
+	margin: 5px 0px;
+	color: #4b4b5a;
+	border: 1px solid #e2e7f1;
+	border-radius: 3px;
+	box-shadow: inset 0 1 1 rgba(0, 0, 0, 0.075);
+	transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+}
+
+.form-textarea {
+	width: 100%;
+	padding: 6px 12px;
+	line-height: 1.428;
+	font-size: 14px;
+	margin: 5px 0px;
+	color: #4b4b5a;
+	border: 1px solid #e2e7f1;
+	border-radius: 3px;
+	box-shadow: inset 0 1 1 rgba(0, 0, 0, 0.075);
+	transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+}
+
+.projectFormContainer {
+	padding: 15px;
+}
+
+.form-control {
+	margin: 8px 0px;
+}
+
+.formFooter {
+	border-top: 1px solid #ccc;
+	padding-top: 10px;
+}
+
+.formBtn {
+	padding: 10px;
+	background: #3b4796;
+	color: #fff;
+	cursor: pointer;
+	font-weight: 600;
+	border-radius: 3px;
+	display: inline-block;
+}
+
+.formElements {
+	overflow: hidden;
+	overflow-y: auto;
+}
+
+.required {
+	color: #f00;
+}
+
+/*dc3545-danger, 17a2b8 - info*/

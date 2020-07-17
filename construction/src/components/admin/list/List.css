@@ -1,0 +1,26 @@
+.listContainer {
+	border: 1px solid #e1e6ef;
+	border-radius: 3px;
+	background: #fff;
+}
+
+.listHeader {
+	border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+}
+
+.listHeaderTitle {
+	padding: 15px;
+	font-weight: 700;
+	/* color: #4b4b5a;
+	font-size: 18px; */
+}
+
+.overflow-y-auto {
+	overflow: hidden;
+	overflow-y: auto;
+}
+.listAction {
+	background-color: #3b4796;
+	color: #fff;
+	padding: 15px;
+}

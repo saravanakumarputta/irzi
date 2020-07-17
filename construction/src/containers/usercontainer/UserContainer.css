@@ -1,0 +1,25 @@
+.sectionContainer {
+	width: 90%;
+	margin: 0 auto;
+}
+
+.mauto {
+	margin: auto;
+}
+
+.containers {
+	margin-top: 50px;
+}
+
+.mb-4 {
+	margin-bottom: 1.5rem !important;
+}
+
+p {
+	margin-top: 0;
+	margin-bottom: 1rem;
+}
+
+.site-section {
+	padding: 5em 0;
+}

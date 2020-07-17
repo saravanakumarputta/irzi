@@ -1,0 +1,40 @@
+.projectImage {
+	height: 40px;
+	width: 40px;
+	margin: 0 10px;
+}
+.projectContainer {
+	border-bottom: 1px solid #ebf0f5;
+	padding: 15px;
+}
+
+.projectTitle {
+	line-height: 40px;
+	color: #403e3e;
+	font-weight: 400;
+}
+
+.projectIcon {
+	line-height: 40px;
+	color: #7a7b7b;
+	margin-right: 20px;
+}
+
+.projectIcon:hover {
+	cursor: pointer;
+	color: #000;
+}
+
+.separator {
+	margin: 0 10px;
+	width: 10px;
+}
+.noContent {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+	font-size: 20px;
+	font-weight: 800;
+	color: #8c8c8e;
+}

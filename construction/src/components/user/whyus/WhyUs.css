@@ -1,0 +1,55 @@
+.whyusImg {
+	width: 48%;
+}
+
+.whyusImg img {
+	width: 100%;
+	margin-top: 1.5rem;
+}
+
+.home_why {
+	margin-right: 15px;
+	font-size: 50px;
+}
+
+.whyusContainer {
+	background: var(--third_bg);
+	color: #fff;
+}
+
+.whyusLeadText {
+	font-weight: 400;
+	text-transform: uppercase;
+	font-size: 1.3rem;
+	color: #296f46;
+}
+.whyusLeadTitle {
+	font-size: 2rem;
+	font-weight: 300;
+}
+
+.whyusService {
+	padding: 0px 2rem;
+}
+
+.whyusServiceIcon {
+	font-size: 50px;
+	color: gray;
+	margin-right: 20px;
+}
+
+.whyusServiceTitle {
+	font-size: 1.25rem;
+	font-weight: 400;
+}
+.whyusServiceText {
+	font-weight: 300;
+}
+
+.whyusServiceItem + .whyusServiceItem {
+	margin-top: 1.4rem;
+}
+
+.whyusServiecContainer {
+	padding-top: 3rem;
+}

@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/static/css/main.ecec46ee.chunk.css",
+    "main.js": "/static/js/main.bbe031d8.chunk.js",
+    "main.js.map": "/static/js/main.bbe031d8.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.00520389.js",
+    "runtime-main.js.map": "/static/js/runtime-main.00520389.js.map",
+    "static/js/2.86ef0b0a.chunk.js": "/static/js/2.86ef0b0a.chunk.js",
+    "static/js/2.86ef0b0a.chunk.js.map": "/static/js/2.86ef0b0a.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.d1f141e52e3cef857bb358f17d1c3c31.js": "/precache-manifest.d1f141e52e3cef857bb358f17d1c3c31.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/main.ecec46ee.chunk.css.map": "/static/css/main.ecec46ee.chunk.css.map",
+    "static/js/2.86ef0b0a.chunk.js.LICENSE.txt": "/static/js/2.86ef0b0a.chunk.js.LICENSE.txt",
+    "static/media/index.css": "/static/media/icomoon.175804ef.svg",
+    "static/media/icomoon.ttf": "/static/media/icomoon.97433573.ttf",
+    "static/media/icomoon.eot": "/static/media/icomoon.99d608d4.eot",
+    "static/media/icomoon.woff": "/static/media/icomoon.d058fe36.woff"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.00520389.js",
+    "static/js/2.86ef0b0a.chunk.js",
+    "static/css/main.ecec46ee.chunk.css",
+    "static/js/main.bbe031d8.chunk.js"
+  ]
+}

@@ -1,0 +1,40 @@
+.newsletterTitle {
+	font-size: 1.75rem;
+	font-weight: 300;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+}
+.newsletterContainer {
+	padding: 3rem 0;
+	color: #fff;
+	background-color: #3b4796;
+}
+.newsletterText,
+.newsletterAction {
+	padding: 0 15px;
+}
+
+.subscribeInput {
+	outline: none;
+	padding: 15px;
+	width: 70%;
+	background: transparent;
+	border: 1px solid #fff;
+	color: #fff;
+	font-size: 17px;
+	font-weight: 500;
+}
+
+.subscribeInput:focus {
+	outline: none;
+}
+.subscribeButton {
+	padding: 15px;
+	border: 1px solid #fff;
+	border-left: none;
+	text-transform: uppercase;
+	font-weight: 700;
+	background: #fff;
+	color: #000;
+	cursor: pointer;
+}

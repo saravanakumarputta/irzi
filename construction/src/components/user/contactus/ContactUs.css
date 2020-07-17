@@ -1,0 +1,55 @@
+.rowItemHolder {
+	width: 50%;
+	padding: 0 1%;
+}
+.cuMessage {
+	padding: 1%;
+}
+
+.cuPhilosphy {
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	padding: 4rem 0;
+	background: url(../../../images/hero_1.jpg);
+	position: relative;
+	z-index: 1;
+}
+
+.cuPhilosphy:before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: #183661;
+	opacity: 0.9;
+	z-index: -1;
+}
+
+.cuPhilosophyItem {
+	width: 30%;
+}
+
+.cuPhilosophyItem h3 {
+	color: #2fadb9;
+	margin-bottom: 25px;
+	font-weight: 400;
+}
+
+.cuPhilosophyItem p {
+	color: #7697c6;
+	font-size: 1.1rem;
+	font-weight: 300;
+}
+
+@media only screen and (max-width: 480px) {
+	.rowItemHolder {
+		width: 100%;
+	}
+	.cuPhilosophyItem {
+		width: 98%;
+		margin: 1rem 1%;
+	}
+}

@@ -1,0 +1,88 @@
+.uHeaderContainer {
+	padding: 25px 0;
+	position: relative;
+}
+.d-block {
+	display: block !important;
+}
+.quick-contact-icons .text .h4 {
+	font-size: 1.2rem;
+	color: #000;
+	margin-bottom: 0;
+}
+.header-top .quick-contact-icons .text .caption-text {
+	font-size: 1rem;
+}
+.caption-text {
+	font-size: 16px;
+	color: gray;
+}
+
+.icon span {
+	font-size: 40px;
+	line-height: 0;
+	color: var(--main_bg);
+}
+.quick-contact-icons .icon {
+	margin-right: 15px;
+}
+.logo img {
+	max-width: 100px;
+}
+
+.wid_70 {
+	flex-basis: 70%;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+.menu-icon {
+	display: none;
+}
+.menu-bar {
+	height: 3px;
+	width: 30px;
+	background-color: #3b4796;
+	border-radius: 5px;
+}
+
+.menu-bar + .menu-bar {
+	margin-top: 5px;
+}
+.reMenuContainer {
+	background-color: var(--main_bg);
+	padding: 25px 0;
+	position: absolute;
+	top: 100%;
+	left: 0;
+	right: 0;
+	z-index: 1;
+}
+.reMenuContainer a {
+	text-decoration: none;
+	font-size: 16px;
+	font-weight: 600;
+	color: #fff;
+	padding: 0 10px;
+	text-transform: uppercase;
+}
+
+.reMenuItems {
+	margin: 1rem;
+}
+
+.reMenuActive {
+	font-weight: 800 !important;
+	text-indent: 10px;
+}
+
+@media all and (max-width: 480px) {
+	.headerDetail {
+		display: none;
+	}
+	.menu-icon {
+		display: block;
+	}
+	.uHeaderContainer {
+		padding: 10px 0;
+	}
+}

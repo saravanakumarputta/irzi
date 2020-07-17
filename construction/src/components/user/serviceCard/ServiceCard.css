@@ -1,0 +1,52 @@
+.serviceCard {
+	width: 100%;
+	padding: 20px 30px;
+	border: 1px solid #ccc;
+	background: #f1f1f1;
+}
+
+.serviceIcon {
+	position: relative;
+	margin-left: 20px;
+}
+
+.serviceIcon:before {
+	position: absolute;
+	content: '';
+	-webkit-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	transform: rotate(45deg);
+	left: -20px;
+	top: -10px;
+	border-top: 40px solid transparent;
+	border-bottom: 40px solid transparent;
+	border-right: 40px solid #2fadb9;
+	z-index: 1;
+}
+.serviceIcon > span::before {
+	color: #000;
+	font-size: 4rem;
+	position: relative;
+	z-index: 2;
+	margin-left: 0;
+}
+
+.serviceTitle {
+	font-size: 1.5rem;
+	color: #000;
+	font-weight: 400;
+}
+.serviceDescription {
+	font-size: 15px;
+	color: gray;
+	line-height: 1.6;
+}
+
+.serviceContent {
+	margin: 10px 0;
+}
+
+.serviceTitle {
+	padding: 30px 0;
+	font-weight: 600;
+}

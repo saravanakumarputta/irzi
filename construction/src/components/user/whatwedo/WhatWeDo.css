@@ -1,0 +1,11 @@
+.sc {
+	width: 23%;
+	margin: 1%;
+}
+
+@media all and (max-width: 480px) {
+	.sc {
+		width: 98%;
+		margin: 2% 1%;
+	}
+}
