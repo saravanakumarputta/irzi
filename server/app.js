@@ -6,6 +6,7 @@ const app = express();
 
 const userAPIs = require('./apis/userAPIs');
 const testimonialAPIs = require('./apis/testimonialApis');
+const subscriptionAPIs = require('./apis/subscriptionApis');
 const projectAPIs = require('./apis/projectApis');
 
 /* Middlewares */
@@ -24,9 +25,10 @@ app.use(express.json());
 app.use(express.static(path.resolve(__dirname, 'public')));
 
 /* APIs */
-app.use('/user', userAPIs);
-app.use('/testimonials', testimonialAPIs);
-app.use('/projects', projectAPIs);
+app.use('/api/user', userAPIs);
+app.use('/api/testimonials', testimonialAPIs);
+app.use('/api/projects', projectAPIs);
+app.use('/api/subscriptions', subscriptionAPIs);
 app.use('/images', express.static('uploads', { etag: false }));
 
 // if (process.env.NODE_ENV === 'production') {

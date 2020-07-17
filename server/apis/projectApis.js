@@ -81,9 +81,7 @@ projectAPIs.patch('/:id', checkAuth, async (req, res) => {
 	try {
 		let updatedProject = await projectService.updateProject(req.params.id, req.body);
 		if (updatedProject.status === 200) {
-			setTimeout(() => {
-				res.status(200).json({ data: updatedProject.data });
-			}, 5000);
+			res.status(200).json({ data: updatedProject.data });
 		} else if (updatedProject.status === 204) {
 			res.status(204).send();
 		} else {

@@ -15,6 +15,7 @@ import testimonialReducer from './reducers/testimonialReducer';
 import projectsReducer from './reducers/projectsReducer';
 import popupLayerReducer from './reducers/popuplayer';
 import userReducer from './reducers/userReducer';
+import emailSubscriptionReducer from './reducers/emailSubscriptionReducer';
 
 let store = createStore(
 	combineReducers({
@@ -22,6 +23,7 @@ let store = createStore(
 		testimonials: testimonialReducer,
 		popupLayer: popupLayerReducer,
 		user: userReducer,
+		emails: emailSubscriptionReducer,
 	}),
 	applyMiddleware(logger, thunk)
 );

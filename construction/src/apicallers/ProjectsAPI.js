@@ -1,7 +1,7 @@
 import callAPI from '../helpers/APIRequest';
 
 export function getProjects() {
-	return callAPI({ url: '/projects', headers: {}, body: {}, method: 'GET' });
+	return callAPI({ url: '/api/projects', headers: {}, body: {}, method: 'GET' });
 }
 
 export function addProject(projectObj) {
@@ -18,7 +18,7 @@ export function addProject(projectObj) {
 	}
 
 	return callAPI({
-		url: '/projects',
+		url: '/api/projects',
 		headers: { 'Content-Type': 'multipart/form-data' },
 		body: formData,
 		method: 'POST',
@@ -27,7 +27,7 @@ export function addProject(projectObj) {
 
 export function updateProject(projectObj) {
 	return callAPI({
-		url: `/projects/${projectObj.projectId}`,
+		url: `/api/projects/${projectObj.projectId}`,
 		headers: { 'Content-Type': 'application/json' },
 		body: projectObj,
 		method: 'PATCH',
@@ -36,7 +36,7 @@ export function updateProject(projectObj) {
 
 export function deleteProject(projectId) {
 	return callAPI({
-		url: `/projects/${projectId}`,
+		url: `/api/projects/${projectId}`,
 		headers: { 'Content-Type': 'application/json' },
 		body: {},
 		method: 'DELETE',

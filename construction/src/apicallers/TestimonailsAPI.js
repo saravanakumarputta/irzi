@@ -1,12 +1,12 @@
 import callAPI from '../helpers/APIRequest';
 
 export function getTestimonials() {
-	return callAPI({ url: '/testimonials', headers: {}, body: {}, method: 'GET' });
+	return callAPI({ url: '/api/testimonials', headers: {}, body: {}, method: 'GET' });
 }
 
 export function approveTestimonial(testimonialId, data) {
 	return callAPI({
-		url: `/testimonials/${testimonialId}`,
+		url: `/api/testimonials/${testimonialId}`,
 		headers: {
 			'Content-Type': 'application/json',
 		},

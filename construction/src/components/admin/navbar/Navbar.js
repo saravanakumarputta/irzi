@@ -4,6 +4,7 @@ import { Switch, Route, useRouteMatch, NavLink } from 'react-router-dom';
 
 import TestimonialContainer from '../../../containers/admincontainers/testimonialscontainer/TestimonialsContainer';
 import ProjectsContainer from '../../../containers/admincontainers/projectsContainer/ProjectsContainer';
+import SubscriptionsContainer from '../../../containers/admincontainers/subscribersContainer/SubscribersContainer';
 
 export default function Navbar() {
 	let { path, url } = useRouteMatch();
@@ -11,16 +12,16 @@ export default function Navbar() {
 		<div className="dflex h100">
 			<div>
 				<div className="dflex navContainer flexcolumn h100">
-					{/* <div className="navItems"> */}
 					<NavLink activeClassName="navItemActive" className="navItem" to={`${url}/projects`}>
 						Projects
 					</NavLink>
-					{/* </div> */}
-					{/* <div className="navItems"> */}
+
 					<NavLink activeClassName="navItemActive" className="navItem" to={`${url}/testimonials`}>
 						Testimonials
 					</NavLink>
-					{/* </div> */}
+					<NavLink activeClassName="navItemActive" className="navItem" to={`${url}/subscription`}>
+						Emails
+					</NavLink>
 				</div>
 			</div>
 			<div className="flexgrow h100 p2">
@@ -33,6 +34,9 @@ export default function Navbar() {
 							<NavLink activeClassName="navItemActiveres" className="navItem" to={`${url}/testimonials`}>
 								Testimonials
 							</NavLink>
+							<NavLink activeClassName="navItemActiveres" className="navItem" to={`${url}/subscription`}>
+								Emails
+							</NavLink>
 						</div>
 					</div>
 					<div className="flexgrow h100">
@@ -42,6 +46,9 @@ export default function Navbar() {
 							</Route>
 							<Route exact path={`${path}/testimonials`}>
 								<TestimonialContainer />
+							</Route>
+							<Route exact path={`${path}/subscription`}>
+								<SubscriptionsContainer />
 							</Route>
 						</Switch>
 					</div>

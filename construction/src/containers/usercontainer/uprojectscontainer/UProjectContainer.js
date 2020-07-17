@@ -26,16 +26,16 @@ class UProjectContainer extends React.Component {
 					<h1>Our Recent Projects</h1>
 				</Hero>
 				<div className="dflex flexwrap site-section sectionContainer">
-					{/* {Object.keys(projects).map((projectId) => {
+					{Object.keys(projects).map((projectId) => {
 						let { title, section1, images } = projects[projectId];
 						return (
 							<div className="pcardContainer" key={title}>
-								<ProjectCard title={title} section1={section1} location="New York!" />
+								<ProjectCard title={title} section1={section1} location="New York!" image={images[0]} />
 							</div>
 						);
-					})} */}
+					})}
 
-					<div className="pcont">
+					{/* <div className="pcont">
 						<ProjectCard title="Factory" section1="Building refinery" />
 					</div>
 					<div className="pcont">
@@ -46,7 +46,7 @@ class UProjectContainer extends React.Component {
 					</div>
 					<div className="pcont">
 						<ProjectCard title="Factory" section1="Building refinery" />
-					</div>
+					</div> */}
 				</div>
 			</React.Fragment>
 		);

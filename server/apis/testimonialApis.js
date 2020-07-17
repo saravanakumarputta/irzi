@@ -9,9 +9,7 @@ testimonialAPIs.get('/', checkAuth, async (req, res) => {
 		let queryParams = req.query;
 		let testimonials = await testimonialService.getTestimonals(queryParams, req.body.userId);
 		if (testimonials.status === 200) {
-			setTimeout(() => {
-				res.status(200).json({ data: testimonials.data });
-			}, 3000);
+			res.status(200).json({ data: testimonials.data });
 		} else if (testimonials.status === 204) {
 			res.status(204).send();
 		} else {
@@ -43,9 +41,7 @@ testimonialAPIs.patch('/:id', checkAuth, async (req, res) => {
 		let id = req.params.id;
 		let testimonial = await testimonialService.approveTestimonial({ id, userId, approvalStatus });
 		if (testimonial.status === 200) {
-			setTimeout(() => {
-				res.status(200).json({ data: testimonial.data });
-			}, 3000);
+			res.status(200).json({ data: testimonial.data });
 		} else {
 			res.status(testimonial.status).json({ errorMessage: testimonial.msg });
 		}

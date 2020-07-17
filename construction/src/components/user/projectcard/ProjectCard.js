@@ -19,11 +19,10 @@ export default function ProjectCard(props) {
 		<div className="upCard">
 			<div className="upContent">
 				<div>
-					{/* <span class="upHeading">Factory</span> */}
-					<h2 class="upTitle">Building Refinery</h2>
+					<h2 class="upTitle">{title}</h2>
 				</div>
 			</div>
-			<img src={logo} alt="projimg" />
+			<img src={image} alt="projimg" />
 		</div>
 	);
 }
