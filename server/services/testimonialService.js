@@ -3,17 +3,17 @@ const userDAL = require('../DAL/userDAL');
 
 async function getTestimonals(filterObj, userId) {
 	try {
-		let userObj = await userDAL.getUserById(userId);
-		if (userObj) {
-			let testimonials = await testimonialDAL.getTestimonials(filterObj);
-			if (Array.isArray(testimonials)) {
-				return testimonials.length > 0 ? { status: 200, data: testimonials } : { status: 204 };
-			} else {
-				return { status: 204 };
-			}
+		// let userObj = await userDAL.getUserById(userId);
+		// if (userObj) {
+		let testimonials = await testimonialDAL.getTestimonials(filterObj);
+		if (Array.isArray(testimonials)) {
+			return testimonials.length > 0 ? { status: 200, data: testimonials } : { status: 204 };
 		} else {
-			return { status: 401, msg: 'NO_ACCESS' };
+			return { status: 204 };
 		}
+		// } else {
+		// 	return { status: 401, msg: 'NO_ACCESS' };
+		// }
 	} catch (err) {
 		return { status: 500, msg: 'TESTIMOANIALS_FETCH_FAILED' };
 	}

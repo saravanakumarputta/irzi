@@ -3,7 +3,7 @@ import './AjaxLoader.css';
 
 export default function AjaxLoader(props) {
 	return (
-		<div class="ajaxLoader">
+		<div className="ajaxLoader">
 			<div></div>
 			<div></div>
 			<div></div>

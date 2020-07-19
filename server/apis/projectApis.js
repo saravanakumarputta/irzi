@@ -27,7 +27,7 @@ const checkAuth = require('../middlewares/checkAuthMiddleware');
 
 const projectAPIs = express.Router();
 
-projectAPIs.get('/', checkAuth, async (req, res) => {
+projectAPIs.get('/', async (req, res) => {
 	try {
 		let projects = await projectService.getProjects();
 		if (projects.status === 200) {
@@ -42,7 +42,7 @@ projectAPIs.get('/', checkAuth, async (req, res) => {
 	}
 });
 
-projectAPIs.get('/:id', checkAuth, async (req, res) => {
+projectAPIs.get('/:id', async (req, res) => {
 	try {
 		let projectId = req.params.id;
 		let project = await projectService.getProject(projectId);

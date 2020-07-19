@@ -4,7 +4,7 @@ const checkAuth = require('../middlewares/checkAuthMiddleware');
 
 const testimonialAPIs = express.Router();
 
-testimonialAPIs.get('/', checkAuth, async (req, res) => {
+testimonialAPIs.get('/', async (req, res) => {
 	try {
 		let queryParams = req.query;
 		let testimonials = await testimonialService.getTestimonals(queryParams, req.body.userId);

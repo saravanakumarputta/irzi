@@ -2,7 +2,7 @@ import callAPI from '../helpers/APIRequest';
 
 export function loginUser(email, password) {
 	return callAPI({
-		url: '/user/signin',
+		url: '/api/user/signin',
 		headers: {
 			'Content-Type': 'application/json',
 		},
@@ -14,7 +14,7 @@ export function loginUser(email, password) {
 
 export function changePassword(oldPassword, newPassword) {
 	return callAPI({
-		url: '/user/changepassword',
+		url: '/api/user/changepassword',
 		headers: {
 			'Content-Type': 'application/json',
 		},

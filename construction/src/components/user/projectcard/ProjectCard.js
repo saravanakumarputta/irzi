@@ -1,10 +1,8 @@
 import React from 'react';
 import './ProjectCard.css';
 
-import logo from '../../../images/works_1.jpg';
-
 export default function ProjectCard(props) {
-	let { title, location, image } = props;
+	let { title, image } = props;
 	return (
 		// <div className="card">
 		// 	<div className="cardThumbnail">

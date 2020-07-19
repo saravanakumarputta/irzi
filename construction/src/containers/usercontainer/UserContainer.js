@@ -1,9 +1,7 @@
 import React from 'react';
 import './UserContainer.css';
 
-import { Switch, Route, Link } from 'react-router-dom';
-
-import About from '../../components/user/about/About';
+import { Switch, Route } from 'react-router-dom';
 
 import Menu from '../../components/user/menu/Menu';
 import Header from '../../components/user/header/Header';

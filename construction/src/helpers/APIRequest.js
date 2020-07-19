@@ -3,7 +3,10 @@ import axios from 'axios';
 export default function callAPI(reqObj) {
 	return new Promise((yeah, nah) => {
 		let { headers, body, url, method, isJSONPayload } = reqObj;
-		headers = Object.assign({}, headers, { Authorization: `Bearer ${localStorage.getItem('token')}` });
+		if (localStorage.getItem('token')) {
+			headers = Object.assign({}, headers, { Authorization: `Bearer ${localStorage.getItem('token')}` });
+		}
+
 		axios({
 			url,
 			headers: headers,

@@ -8,6 +8,7 @@ const userAPIs = require('./apis/userAPIs');
 const testimonialAPIs = require('./apis/testimonialApis');
 const subscriptionAPIs = require('./apis/subscriptionApis');
 const projectAPIs = require('./apis/projectApis');
+const contactMailAPIs = require('./apis/contactMailApis');
 
 /* Middlewares */
 // app.use(cors());
@@ -29,6 +30,7 @@ app.use('/api/user', userAPIs);
 app.use('/api/testimonials', testimonialAPIs);
 app.use('/api/projects', projectAPIs);
 app.use('/api/subscriptions', subscriptionAPIs);
+app.use('/api/contact', contactMailAPIs);
 app.use('/images', express.static('uploads', { etag: false }));
 
 // if (process.env.NODE_ENV === 'production') {

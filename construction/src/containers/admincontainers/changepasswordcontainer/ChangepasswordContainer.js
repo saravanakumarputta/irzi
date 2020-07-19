@@ -47,7 +47,7 @@ class ChangePasswordContainer extends React.Component {
 		if (oldPassword && newPassword) {
 			changePassword(oldPassword, newPassword)
 				.then((res) => {
-					let { status, data } = res;
+					let { status } = res;
 					_this.setState({ isLoading: false });
 					if (status === 200) {
 						hidepopupLayer();

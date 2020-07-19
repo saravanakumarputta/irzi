@@ -13,6 +13,7 @@ import AjaxLoader from '../../../components/common/ajaxloader/AjaxLoader';
 import irzi from '../../../images/logo.png';
 
 function ValidateEmail(mail) {
+	// eslint-disable-next-line
 	if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(mail)) {
 		return true;
 	}
@@ -55,7 +56,7 @@ class LoginContainer extends React.Component {
 						}
 					})
 					.catch((err) => {
-						let { status, data } = err;
+						let { data } = err;
 						_this.setState({ isLoading: false });
 						let errConst = {
 							INVALID_USER_NAME: 'Invalid Email Id',
