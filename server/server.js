@@ -1,12 +1,13 @@
 const mongoose = require('mongoose');
+require('dotenv').config();
 
-const app = require('./server/app');
+const app = require('./app');
 
 const PORT = process.env.PORT || 3000;
 
 async function startServer() {
 	try {
-		await mongoose.connect('mongodb://localhost:27017/website', {
+		await mongoose.connect(process.env.DB_ENDPOINT, {
 			useNewUrlParser: true,
 			useUnifiedTopology: true,
 			useFindAndModify: false,
@@ -20,5 +21,3 @@ async function startServer() {
 }
 
 startServer();
-
-// mongodb+srv://sana:admin@main-cluster-yzh55.mongodb.net/test?retryWrites=true&w=majority',

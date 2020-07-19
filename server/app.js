@@ -2,7 +2,6 @@ const express = require('express');
 const path = require('path');
 
 const app = express();
-// const cors = require('cors');
 
 const userAPIs = require('./apis/userAPIs');
 const testimonialAPIs = require('./apis/testimonialApis');
@@ -11,7 +10,6 @@ const projectAPIs = require('./apis/projectApis');
 const contactMailAPIs = require('./apis/contactMailApis');
 
 /* Middlewares */
-// app.use(cors());
 app.use((req, res, next) => {
 	res.header('Access-Control-Allow-Origin', '*');
 	res.header('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept, Authorization');
