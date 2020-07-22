@@ -1,53 +1,77 @@
 import React from 'react';
+import './UServiceContainer.css';
 import Hero from '../../../components/user/hero/Hero';
-
-import ServiceCard from '../../../components/user/serviceCard/ServiceCard';
+import about_1 from '../../../images/about_1.jpg';
 
 export default class UServiceContainer extends React.Component {
 	constructor(props) {
 		super(props);
-		this.state = {
-			services: [
-				{
-					title: 'Great Team',
-					icon: 'myicon-engineer',
-					description: 'Gravida sodales condimentum pellen tesq accumsan orci quam sagittis sapie',
-				},
-				{
-					title: 'Quality Building',
-					icon: 'myicon-oil-platform',
-					description: 'Gravida sodales condimentum pellen tesq accumsan orci quam sagittis sapie',
-				},
-				{
-					title: 'Quality Works',
-					icon: 'myicon-crane',
-					description: 'Gravida sodales condimentum pellen tesq accumsan orci quam sagittis sapie',
-				},
-				{
-					title: 'Great Ideas',
-					icon: 'myicon-idea',
-					description: 'Gravida sodales condimentum pellen tesq accumsan orci quam sagittis sapie',
-				},
-			],
-		};
 	}
 
 	render() {
 		return (
 			<React.Fragment>
-				<Hero
-					title="Services"
-					description="Gravida sodales condimentum pellen tesq accumsan orci quam sagittis sapie"
-				/>
-				<div className="dflex flexwrap site-section sectionContainer">
-					{this.state.services.map((service) => {
-						let { title, icon, description } = service;
-						return (
-							<div className="pcardContainer">
-								<ServiceCard title={title} iconClassName={icon} description={description} />
+				<Hero height="300">
+					<h1>Our Services</h1>
+				</Hero>
+
+				<div className="dflex flexcolumn site-section">
+					<div className="sectionContainer">
+						<div className="uServiceContainer dflex">
+							<div className="uServiceImage">
+								<img src={about_1}></img>
 							</div>
-						);
-					})}
+							<div className="uServiceContent">
+								<h3>Lorm Ipsum Dolor</h3>
+								<h4>Welcome To Builder</h4>
+								<p>
+									Excellence in architecture engineering and intrior design Lorem Ipsum is simply
+									dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy
+									text of the printing and typesetting industry.
+								</p>
+								<p>
+									Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+									Ipsum is simply dummy text of the printing and typesetting industry.
+								</p>
+							</div>
+						</div>
+						<div className="uServiceContainer dflex">
+							<div className="uServiceImage">
+								<img src={about_1}></img>
+							</div>
+							<div className="uServiceContent">
+								<h3>Lorm Ipsum Dolor</h3>
+								<h4>Welcome To Builder</h4>
+								<p>
+									Excellence in architecture engineering and intrior design Lorem Ipsum is simply
+									dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy
+									text of the printing and typesetting industry.
+								</p>
+								<p>
+									Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+									Ipsum is simply dummy text of the printing and typesetting industry.
+								</p>
+							</div>
+						</div>
+						<div className="uServiceContainer dflex">
+							<div className="uServiceImage">
+								<img src={about_1}></img>
+							</div>
+							<div className="uServiceContent">
+								<h3>Lorm Ipsum Dolor</h3>
+								<h4>Welcome To Builder</h4>
+								<p>
+									Excellence in architecture engineering and intrior design Lorem Ipsum is simply
+									dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy
+									text of the printing and typesetting industry.
+								</p>
+								<p>
+									Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+									Ipsum is simply dummy text of the printing and typesetting industry.
+								</p>
+							</div>
+						</div>
+					</div>
 				</div>
 			</React.Fragment>
 		);

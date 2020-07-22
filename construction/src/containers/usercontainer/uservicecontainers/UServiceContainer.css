@@ -1,0 +1,37 @@
+.uServiceContent h3 {
+	font-size: 26px;
+	margin-bottom: 10px;
+	color: #3b4896;
+}
+.uServiceContainer {
+	margin-bottom: 15px;
+	border: 1px solid #ddd;
+}
+.uServiceContent h4 {
+	margin-bottom: 15px;
+}
+.uServiceContent p {
+	margin-bottom: 15px;
+}
+.uServiceImage img {
+	width: 100%;
+	height: 100%;
+}
+
+.uServiceImage {
+	flex-basis: 35%;
+}
+.uServiceContent {
+	padding: 20px 40px;
+	flex-basis: 65%;
+}
+
+@media all and (max-width: 480px) {
+	.uServiceContainer {
+		flex-direction: column;
+	}
+	.uServiceImage,
+	.uServiceContent {
+		flex-basis: 100%;
+	}
+}

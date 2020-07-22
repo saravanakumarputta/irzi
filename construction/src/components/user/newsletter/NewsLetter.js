@@ -10,7 +10,7 @@ export default function NewsLetter(props) {
 					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, reprehenderit!</p>
 				</div>
 				<div className="newsletterAction flexgrow">
-					<input type="text" className="subscribeInput" />
+					<input type="text" className="subscribeInput" placeholder="Type Here..." />
 					<span className="subscribeButton">Subscribe</span>
 				</div>
 			</div>

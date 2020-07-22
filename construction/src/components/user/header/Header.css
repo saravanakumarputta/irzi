@@ -30,11 +30,6 @@
 	max-width: 100px;
 }
 
-/* .wid_70 {
-	flex-basis: 70%;
-	padding-left: 15px;
-	padding-right: 15px;
-} */
 .menu-icon {
 	display: none;
 }
@@ -50,7 +45,7 @@
 }
 .reMenuContainer {
 	background-color: var(--main_bg);
-	padding: 25px 0;
+
 	position: absolute;
 	top: 100%;
 	left: 0;
@@ -62,17 +57,12 @@
 	font-size: 16px;
 	font-weight: 600;
 	color: #fff;
-	padding: 0 10px;
+	padding: 20px;
 	text-transform: uppercase;
 }
 
-.reMenuItems {
-	margin: 1rem;
-}
-
 .reMenuActive {
-	font-weight: 800 !important;
-	text-indent: 10px;
+	background: #313c88;
 }
 
 .headerDetail {

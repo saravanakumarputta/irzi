@@ -140,3 +140,8 @@ h1 {
 	font-size: 2.5rem;
 	font-weight: 300;
 }
+
+.resContainer {
+	max-width: 1280px;
+	margin: auto;
+}

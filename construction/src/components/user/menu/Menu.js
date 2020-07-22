@@ -10,6 +10,9 @@ export default function Menu() {
 				<NavLink exact to="/" activeClassName="activeClass">
 					Home
 				</NavLink>
+				<NavLink to="/services" activeClassName="activeClass">
+					Our Services
+				</NavLink>
 				<NavLink to="/projects" activeClassName="activeClass">
 					Projects
 				</NavLink>
