@@ -49,3 +49,21 @@
 	background: #ccc;
 	color: #333;
 }
+
+@media all and (max-width: 480px) {
+	.subscribeButton {
+		padding: 0 10px;
+	}
+	.newsletterText {
+		flex-basis: 100%;
+	}
+}
+
+@media all and (min-width: 480px) and (max-width: 768px) {
+	.newsletterText {
+		flex-basis: 100%;
+	}
+	.subscribeButton {
+		padding: 0 60px;
+	}
+}

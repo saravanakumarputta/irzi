@@ -35,3 +35,9 @@
 		flex-basis: 100%;
 	}
 }
+
+@media all and (min-width: 480px) and (max-width: 768px) {
+	.uServiceImage {
+		flex-basis: 48%;
+	}
+}

@@ -50,3 +50,17 @@
 	padding: 30px 0;
 	font-weight: 600;
 }
+
+@media all and (max-width: 480px) {
+	.sc {
+		width: 98%;
+		margin: 1rem 1%;
+	}
+}
+
+@media all and (min-width: 480px) and (max-width: 768px) {
+	.sc {
+		width: 48%;
+		margin: 1%;
+	}
+}

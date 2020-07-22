@@ -11,7 +11,7 @@ export default function Menu() {
 					Home
 				</NavLink>
 				<NavLink to="/services" activeClassName="activeClass">
-					Our Services
+					Services
 				</NavLink>
 				<NavLink to="/projects" activeClassName="activeClass">
 					Projects
