@@ -7,3 +7,10 @@
 	width: 25%;
 	padding: 0 15px;
 }
+
+@media all and (max-width: 480px) {
+	.pcardContainer {
+		width: 99%;
+		margin: 1rem 1%;
+	}
+}

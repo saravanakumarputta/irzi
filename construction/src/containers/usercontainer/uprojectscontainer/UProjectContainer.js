@@ -34,19 +34,6 @@ class UProjectContainer extends React.Component {
 							</div>
 						);
 					})}
-
-					{/* <div className="pcont">
-						<ProjectCard title="Factory" section1="Building refinery" />
-					</div>
-					<div className="pcont">
-						<ProjectCard title="Factory" section1="Building refinery" />
-					</div>
-					<div className="pcont">
-						<ProjectCard title="Factory" section1="Building refinery" />
-					</div>
-					<div className="pcont">
-						<ProjectCard title="Factory" section1="Building refinery" />
-					</div> */}
 				</div>
 			</React.Fragment>
 		);
