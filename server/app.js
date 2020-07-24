@@ -3,7 +3,7 @@ const path = require('path');
 
 const app = express();
 
-const userAPIs = require('./apis/userAPIs');
+const userAPIs = require('./apis/userApis');
 const testimonialAPIs = require('./apis/testimonialApis');
 const subscriptionAPIs = require('./apis/subscriptionApis');
 const projectAPIs = require('./apis/projectApis');
