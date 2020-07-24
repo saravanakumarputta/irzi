@@ -23,7 +23,7 @@ export default class Projectdetail extends React.Component {
 			});
 	}
 	render() {
-		let { title, images, section1, section2 } = this.state.project;
+		let { title, images, section1, section2, location, type, client } = this.state.project;
 
 		return (
 			<div className="dflex flexcolumn site-section sectionContainer">
@@ -37,30 +37,21 @@ export default class Projectdetail extends React.Component {
 								</div>
 							);
 						})}
-					{/* <div>
-						<img src={product_thumb}></img>
-					</div>
-					<div className="uProjectImage">
-						<img src={product_thumb}></img>
-					</div>
-					<div className="uProjectImage">
-						<img src={product_thumb}></img>
-					</div> */}
 				</div>
 				<div className="uProjectDetail dflex">
 					<div className="uProjectInfo">
 						<ul>
 							<li>
 								<h4>CLIENT</h4>
-								<p>Studio Massimo, Italy</p>
+								<p>{client}</p>
 							</li>
 							<li>
 								<h4>PROJECT TYPE</h4>
-								<p>Contruction, Brading</p>
+								<p>{type}</p>
 							</li>
 							<li>
 								<h4>LOCATION</h4>
-								<p>Mountain View CA 94043</p>
+								<p>{location}</p>
 							</li>
 						</ul>
 					</div>

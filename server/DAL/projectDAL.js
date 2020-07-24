@@ -9,6 +9,9 @@ getProjects = async () => {
 				title: project._doc.title,
 				section1: project._doc.section1,
 				section2: project._doc.section2,
+				location: project._doc.location,
+				client: project._doc.client,
+				type: project._doc.type,
 				images: project._doc.images,
 			});
 			return projectsList;
@@ -37,6 +40,9 @@ addProject = async (projectObj) => {
 				title: project._doc.title,
 				section1: project._doc.section1,
 				section2: project._doc.section2,
+				location: project._doc.location,
+				client: project._doc.client,
+				type: project._doc.type,
 				images: project._doc.images,
 			};
 		} else {
@@ -56,6 +62,9 @@ updateProject = async (id, projectObj) => {
 				title: updatedProject._doc.title,
 				section1: updatedProject._doc.section1,
 				section2: updatedProject._doc.section2,
+				location: updatedProject._doc.location,
+				client: updatedProject._doc.client,
+				type: updatedProject._doc.type,
 				images: updatedProject._doc.images,
 			};
 		} else {
@@ -75,6 +84,9 @@ deleteProject = async (id) => {
 				title: isProjectDeleted._doc.title,
 				section1: isProjectDeleted._doc.section1,
 				section2: isProjectDeleted._doc.section2,
+				location: isProjectDeleted._doc.location,
+				client: isProjectDeleted._doc.client,
+				type: isProjectDeleted._doc.type,
 				image: isProjectDeleted._doc.image,
 			};
 		} else {

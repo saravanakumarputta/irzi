@@ -17,6 +17,21 @@ const projectSchema = new Schema({
 		required: true,
 		trim: true,
 	},
+	type: {
+		type: String,
+		required: true,
+		trim: true,
+	},
+	location: {
+		type: String,
+		required: true,
+		trim: true,
+	},
+	client: {
+		type: String,
+		required: true,
+		trim: true,
+	},
 	images: [
 		{
 			type: String,

@@ -47,6 +47,30 @@ function validateProjectPaylod(projectObj) {
 		return 'section2_PARAM_MISSING';
 	}
 
+	if (projectObj.hasOwnProperty('location')) {
+		if (!projectObj.location) {
+			return 'location_PARAM_NOT_VALID';
+		}
+	} else {
+		return 'location_PARAM_MISSING';
+	}
+
+	if (projectObj.hasOwnProperty('type')) {
+		if (!projectObj.type) {
+			return 'type_PARAM_NOT_VALID';
+		}
+	} else {
+		return 'type_PARAM_MISSING';
+	}
+
+	if (projectObj.hasOwnProperty('client')) {
+		if (!projectObj.client) {
+			return 'client_PARAM_NOT_VALID';
+		}
+	} else {
+		return 'client_PARAM_MISSING';
+	}
+
 	if (!projectObj.hasOwnProperty('images')) {
 		return 'images_PARAM_MISSING';
 	}

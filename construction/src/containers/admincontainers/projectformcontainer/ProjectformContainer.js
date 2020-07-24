@@ -22,12 +22,18 @@ class ProjectFormContainer extends React.Component {
 			section2: '',
 			disabled: true,
 			type: 'add',
-			images: null,
+			images: [],
 			titleErrMsg: '',
 			section1ErrMsg: '',
 			section2ErrMsg: '',
 			errMsg: '',
 			isLoading: false,
+			location: '',
+			client: '',
+			ptype: '',
+			typeErrMsg: '',
+			clientErrMsg: '',
+			locationErrMsg: '',
 		};
 		this.handleSave = this.handleSave.bind(this);
 		this.handleUpdate = this.handleUpdate.bind(this);
@@ -37,7 +43,7 @@ class ProjectFormContainer extends React.Component {
 
 	handleSave() {
 		let { addProjectSuccess, hidepopupLayer, logout } = this.props;
-		let { title, section1, section2 } = this.state;
+		let { title, section1, section2, client, ptype, location } = this.state;
 		let _this = this;
 		if (title.length <= 0) {
 			this.setState({ titleErrMsg: 'Title is required' });
@@ -48,12 +54,24 @@ class ProjectFormContainer extends React.Component {
 		if (section2.length <= 0) {
 			this.setState({ section2ErrMsg: 'Section-2 is required' });
 		}
-		if (title && section1 && section2) {
+		if (ptype.length <= 0) {
+			this.setState({ typeErrMsg: 'type is required' });
+		}
+		if (location.length <= 0) {
+			this.setState({ locationErrMsg: 'location is required' });
+		}
+		if (client.length <= 0) {
+			this.setState({ clientErrMsg: 'client is required' });
+		}
+		if (title && section1 && section2 && location && client && ptype) {
 			_this.setState({ isLoading: true });
 			addProject({
 				title,
 				section1,
 				section2,
+				location,
+				type: ptype,
+				client,
 				images: this.fileInput.current.files,
 			})
 				.then((res) => {
@@ -77,7 +95,7 @@ class ProjectFormContainer extends React.Component {
 
 	handleUpdate() {
 		let { projectId, logout, hidepopupLayer, updateProjectSuccess } = this.props;
-		let { title, section1, section2 } = this.state;
+		let { title, section1, section2, ptype, location, client } = this.state;
 		let _this = this;
 		_this.setState({ isLoading: true });
 		if (title.length <= 0) {
@@ -89,12 +107,24 @@ class ProjectFormContainer extends React.Component {
 		if (section2.length <= 0) {
 			this.setState({ section2ErrMsg: 'Section-2 is required' });
 		}
-		if (title && section1 && section2) {
+		if (ptype.length <= 0) {
+			this.setState({ typeErrMsg: 'type is required' });
+		}
+		if (location.length <= 0) {
+			this.setState({ locationErrMsg: 'location is required' });
+		}
+		if (client.length <= 0) {
+			this.setState({ clientErrMsg: 'client is required' });
+		}
+		if (title && section1 && section2 && location && ptype && client) {
 			updateProject({
 				projectId,
 				title,
 				section1,
 				section2,
+				type: ptype,
+				client,
+				location,
 			})
 				.then((res) => {
 					let { status, data } = res;
@@ -138,11 +168,15 @@ class ProjectFormContainer extends React.Component {
 
 	componentDidMount() {
 		let { projectInfo, type } = this.props;
+		console.log(projectInfo);
 		if (projectInfo) {
 			this.setState({
 				title: projectInfo.title,
 				section1: projectInfo.section1,
 				section2: projectInfo.section2,
+				ptype: projectInfo.type,
+				client: projectInfo.client,
+				location: projectInfo.location,
 				images: projectInfo.images,
 			});
 		}
@@ -199,6 +233,48 @@ class ProjectFormContainer extends React.Component {
 							}
 						}}
 						errMsg={this.state.section2ErrMsg}
+						disabled={this.state.disabled}
+					/>
+					<TextBox
+						label="Project Location"
+						value={this.state.location}
+						changeHandler={(location) => {
+							this.setState({ location: location });
+							if (location.length <= 0) {
+								this.setState({ locationErrMsg: 'Project Location is required' });
+							} else {
+								this.setState({ locationErrMsg: '' });
+							}
+						}}
+						errMsg={this.state.locationErrMsg}
+						disabled={this.state.disabled}
+					/>
+					<TextBox
+						label="Project Type"
+						value={this.state.ptype}
+						changeHandler={(ptype) => {
+							this.setState({ ptype: ptype });
+							if (ptype.length <= 0) {
+								this.setState({ typeErrMsg: 'Project Type is required' });
+							} else {
+								this.setState({ typeErrMsg: '' });
+							}
+						}}
+						errMsg={this.state.typeErrMsg}
+						disabled={this.state.disabled}
+					/>
+					<TextBox
+						label="Client"
+						value={this.state.client}
+						changeHandler={(client) => {
+							this.setState({ client: client });
+							if (client.length <= 0) {
+								this.setState({ clientErrMsg: 'Client is required' });
+							} else {
+								this.setState({ clientErrMsg: '' });
+							}
+						}}
+						errMsg={this.state.clientErrMsg}
 						disabled={this.state.disabled}
 					/>
 					{this.state.type === 'add' ? (

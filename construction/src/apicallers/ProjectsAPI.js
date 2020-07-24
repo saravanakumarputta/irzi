@@ -9,13 +9,16 @@ export function getProject(id) {
 }
 
 export function addProject(projectObj) {
-	let { title, images, section1, section2 } = projectObj;
+	let { title, images, section1, section2, type, client, location } = projectObj;
 
 	let formData = new FormData();
 
 	formData.append('title', title);
 	formData.append('section1', section1);
 	formData.append('section2', section2);
+	formData.append('type', type);
+	formData.append('location', location);
+	formData.append('client', client);
 
 	for (const key of Object.keys(images)) {
 		formData.append('images', images[key]);
