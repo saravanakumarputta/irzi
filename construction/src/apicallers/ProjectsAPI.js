@@ -4,6 +4,10 @@ export function getProjects() {
 	return callAPI({ url: '/api/projects', headers: {}, body: {}, method: 'GET' });
 }
 
+export function getProject(id) {
+	return callAPI({ url: `/api/projects/${id}`, headers: {}, body: {}, method: 'GET' });
+}
+
 export function addProject(projectObj) {
 	let { title, images, section1, section2 } = projectObj;
 

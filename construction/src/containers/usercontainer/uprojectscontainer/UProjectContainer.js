@@ -29,7 +29,12 @@ class UProjectContainer extends React.Component {
 					{Object.keys(projects).map((projectId) => {
 						let { title, section1, images } = projects[projectId];
 						return (
-							<div className="pcardContainer" key={title}>
+							<div
+								className="pcardContainer"
+								key={title}
+								onClick={() => {
+									this.props.history.push(`/projects/${projectId}`);
+								}}>
 								<ProjectCard title={title} section1={section1} location="New York!" image={images[0]} />
 							</div>
 						);

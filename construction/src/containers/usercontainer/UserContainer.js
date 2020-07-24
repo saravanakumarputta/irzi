@@ -47,21 +47,11 @@ export default class UserContainer extends React.Component {
 								<NewsLetter />
 							</div>
 						</Route>
-						<Route exact path="/projects">
-							<UProjectContainer />
-						</Route>
-						<Route exact path="/projects/:id">
-							<UProjectDetailContainer />
-						</Route>
-						<Route exact path="/testimonials">
-							<UTestimonialContainer />
-						</Route>
-						<Route exact path="/services">
-							<UServiceContainer />
-						</Route>
-						<Route exact path="/contact">
-							<ContactUs />
-						</Route>
+						<Route exact path="/projects" component={UProjectContainer} />
+						<Route exact path="/projects/:id" component={UProjectDetailContainer} />
+						<Route exact path="/testimonials" component={UTestimonialContainer} />
+						<Route exact path="/services" component={UServiceContainer} />
+						<Route exact path="/contact" component={ContactUs} />
 					</Switch>
 				</div>
 				<Footer />

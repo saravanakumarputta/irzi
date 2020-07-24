@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import './NewsLetter.css';
 
+import { addEmailTosubscriptionList } from '../../../apicallers/EmailAPI';
+
 export default function NewsLetter(props) {
 	let [email, setEmail] = useState('');
 	return (
@@ -18,11 +20,22 @@ export default function NewsLetter(props) {
 						onChange={(e) => {
 							setEmail(e.target.value);
 						}}
+						value={email}
 					/>
 					<span
 						className="subscribeButton"
 						onClick={() => {
-							console.log(email);
+							addEmailTosubscriptionList(email)
+								.then((res) => {
+									debugger;
+									let { status } = res;
+									if (status == 200) {
+										setEmail('');
+									}
+								})
+								.catch((err) => {
+									alert('Unable to Add you email to subscription list!!!');
+								});
 						}}>
 						Subscribe
 					</span>

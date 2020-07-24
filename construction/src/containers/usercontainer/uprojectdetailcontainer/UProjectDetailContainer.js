@@ -1,9 +1,6 @@
 import React from 'react';
 import './UProjectDetailContainer.css';
 
-import product_thumb from '../../../images/works_1.jpg';
-// import { connect } from 'react-redux';
-
 import { getProject } from '../../../apicallers/ProjectsAPI';
 
 export default class Projectdetail extends React.Component {
