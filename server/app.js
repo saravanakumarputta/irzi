@@ -29,7 +29,7 @@ app.use('/api/testimonials', testimonialAPIs);
 app.use('/api/projects', projectAPIs);
 app.use('/api/subscriptions', subscriptionAPIs);
 app.use('/api/contact', contactMailAPIs);
-app.use('/images', express.static(path.resolve(__dirname, 'uploads')));
+// app.use('/images', express.static(path.resolve(__dirname, 'uploads')));
 
 app.get('*', (req, res) => {
 	res.sendFile(path.resolve(__dirname, 'public', 'index.html'));
