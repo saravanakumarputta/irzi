@@ -1,0 +1,56 @@
+.uProjectImage {
+	padding: 20px;
+	width: 33.3%;
+}
+
+.uProjectImage img {
+	width: 100%;
+}
+.uProjectInfo {
+	width: 30%;
+}
+.uProjectInfo li {
+	margin-bottom: 10px;
+	list-style-type: none;
+}
+.uProjectInfo li h4 {
+	font-size: 18px;
+	margin-bottom: 15px;
+	color: #3b4896;
+}
+.uProjectInfo li p {
+	color: #999;
+}
+.uProjectSummary {
+	width: 70%;
+}
+.uProjectSummary p {
+	margin-bottom: 15px;
+}
+.uProjectDetail {
+	padding: 30px 20px;
+}
+.uProjectTitle {
+	font-size: 34px;
+	margin-bottom: 25px;
+	padding-left: 20px;
+}
+
+@media all and (max-width: 480px) {
+	.uProjectImageContainer,
+	.uProjectDetail {
+		flex-direction: column;
+	}
+	.uProjectImage {
+		width: 98%;
+		padding: 0;
+		margin: 1rem 1%;
+	}
+	.uProjectSummary,
+	.uProjectInfo {
+		width: 98%;
+	}
+	.uProjectDetail {
+		padding: 30px 10px;
+	}
+}

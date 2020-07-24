@@ -29,15 +29,12 @@ app.use('/api/testimonials', testimonialAPIs);
 app.use('/api/projects', projectAPIs);
 app.use('/api/subscriptions', subscriptionAPIs);
 app.use('/api/contact', contactMailAPIs);
-app.use('/images', express.static('uploads', { etag: false }));
-
-// if (process.env.NODE_ENV === 'production') {
-// app.use(express.static('public'));
+app.use('/images', express.static(path.resolve(__dirname, 'uploads')));
 
 app.get('*', (req, res) => {
 	res.sendFile(path.resolve(__dirname, 'public', 'index.html'));
 });
-// }
+
 app.use(function (req, res, next) {
 	res.status(404).json({ errorMessage: "Sorry can't find that!" });
 });

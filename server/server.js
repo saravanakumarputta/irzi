@@ -8,7 +8,7 @@ const PORT = process.env.PORT || 3000;
 async function startServer() {
 	try {
 		console.log(process.env.DB_ENDPOINT);
-		await mongoose.connect(process.env.DB_ENDPOINT, {
+		await mongoose.connect('mongodb://localhost:27017/website', {
 			useNewUrlParser: true,
 			useUnifiedTopology: true,
 			useFindAndModify: false,

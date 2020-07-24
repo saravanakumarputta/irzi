@@ -17,6 +17,7 @@ import ContactUs from '../../components/user/contactus/ContactUs';
 import UProjectContainer from './uprojectscontainer/UProjectContainer';
 import UServiceContainer from './uservicecontainers/UServiceContainer';
 import UTestimonialContainer from './utestimonialcontainer/TestimonialContainer';
+import UProjectDetailContainer from './uprojectdetailcontainer/UProjectDetailContainer';
 
 export default class UserContainer extends React.Component {
 	constructor(props) {
@@ -50,7 +51,7 @@ export default class UserContainer extends React.Component {
 							<UProjectContainer />
 						</Route>
 						<Route exact path="/projects/:id">
-							<ContactUs />
+							<UProjectDetailContainer />
 						</Route>
 						<Route exact path="/testimonials">
 							<UTestimonialContainer />

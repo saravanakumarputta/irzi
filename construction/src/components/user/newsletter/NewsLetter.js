@@ -1,7 +1,8 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './NewsLetter.css';
 
 export default function NewsLetter(props) {
+	let [email, setEmail] = useState('');
 	return (
 		<div className="newsletterContainer">
 			<div className="dflex flexwrap sectionContainer">
@@ -10,8 +11,21 @@ export default function NewsLetter(props) {
 					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, reprehenderit!</p>
 				</div>
 				<div className="newsletterAction flexgrow">
-					<input type="text" className="subscribeInput" placeholder="Type Here..." />
-					<span className="subscribeButton">Subscribe</span>
+					<input
+						type="text"
+						className="subscribeInput"
+						placeholder="Type Here..."
+						onChange={(e) => {
+							setEmail(e.target.value);
+						}}
+					/>
+					<span
+						className="subscribeButton"
+						onClick={() => {
+							console.log(email);
+						}}>
+						Subscribe
+					</span>
 				</div>
 			</div>
 		</div>
