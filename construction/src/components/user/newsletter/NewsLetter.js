@@ -27,9 +27,8 @@ export default function NewsLetter(props) {
 						onClick={() => {
 							addEmailTosubscriptionList(email)
 								.then((res) => {
-									debugger;
 									let { status } = res;
-									if (status == 200) {
+									if (status === 200) {
 										setEmail('');
 									}
 								})

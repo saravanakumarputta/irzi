@@ -15,7 +15,7 @@ export default function FeaturedTestimonials() {
 					<div className="dflex flexwrap">
 						<div class="ftContent">
 							<div>
-								<img src={person} alt="img" />
+								{/* <img src={person} alt="img" /> */}
 								<blockquote>
 									<p>
 										“Lorem ipsum dolor sit, amet consectetur adipisicing elit. Provident deleniti
@@ -27,7 +27,7 @@ export default function FeaturedTestimonials() {
 						</div>
 						<div class="ftContent">
 							<div>
-								<img src={person} alt="img" />
+								{/* <img src={person} alt="img" /> */}
 								<blockquote>
 									<p>
 										“Lorem ipsum dolor sit, amet consectetur adipisicing elit. Provident deleniti

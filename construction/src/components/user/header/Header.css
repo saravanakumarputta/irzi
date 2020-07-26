@@ -80,6 +80,131 @@
 	}
 }
 
+/* ================Rreview style start=================== */
+
+.reviewForm {
+	opacity: 0;
+	visibility: hidden;
+}
+.reviewFormFreeze {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: rgba(0, 0, 0, 0.5);
+	z-index: 9;
+	align-items: center;
+	justify-content: center;
+}
+.reviewFormOpen {
+	opacity: 1;
+	visibility: visible;
+}
+.reviewFormHolder {
+	background: #fff;
+	border-radius: 5px;
+	width: 30%;
+	transition: all 0.5s ease;
+	border: 5px solid #3c4797;
+	position: relative;
+}
+.reviewFormOpen .reviewFormHolder {
+	transform: scale(1);
+}
+.reviewFormTitleContainer {
+	background: #3b4896;
+	padding: 30px 20px;
+}
+.reviewForm {
+	position: relative;
+	padding: 5px;
+}
+.reviewFormControls {
+	padding: 20px;
+}
+.reviewFormControls li {
+	padding: 0 20px 0 20px;
+}
+.reviewFormControls li input[type='text'] {
+	border: 0;
+	width: 100%;
+	background: #f1f1f1;
+	height: 40px;
+	padding: 0 15px;
+	margin: 0 0 10px 0;
+}
+.reviewFormControls li textarea {
+	border: 0;
+	width: 100%;
+	background: #f1f1f1;
+	height: 80px;
+	padding: 20px 15px;
+	font-family: roboto;
+	resize: vertical;
+}
+
+.success {
+	color: #35b130;
+}
+.failed {
+	color: #ff0100;
+}
+.resultMsg {
+	margin-left: 10px;
+}
+
+.clsoseIcon {
+	color: #fff;
+	position: absolute;
+	right: 10px;
+	top: 10px;
+	font-size: 13px;
+	cursor: pointer;
+	font-family: proxima;
+}
+.clsoseIcon i {
+	background: url(../../../images/close.png) no-repeat 0 0 / cover;
+	width: 15px;
+	height: 15px;
+	display: block;
+	transition: all 0.5s ease;
+}
+.clsoseIcon i:hover {
+	transform: rotateY(180deg);
+}
+.hide {
+	display: none;
+}
+.reviewFormTitleContainer h3 {
+	color: #fff;
+	font-size: 30px;
+	margin-bottom: 15px;
+}
+
+.review_icn {
+	position: fixed;
+	right: 30px;
+	bottom: 30px;
+	background: #3b4896;
+	padding: 15px;
+	cursor: pointer;
+	border-radius: 50%;
+	z-index: 8;
+	border: 3px solid #fff;
+	transition: all 0.3s ease-in-out;
+}
+.review_icn:hover {
+	transform: rotateZ(180deg);
+}
+.review_icn i {
+	width: 32px;
+	height: 32px;
+	display: block;
+	background: url(../../../images/review.png) 0 0 / cover;
+}
+/* ================Rreview style end=================== */
+
 @media all and (max-width: 480px) {
 	.headerDetail {
 		display: none;
@@ -89,5 +214,8 @@
 	}
 	.uHeaderContainer {
 		padding: 10px 0;
+	}
+	.reviewFormHolder {
+		width: 90%;
 	}
 }

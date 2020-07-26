@@ -4,10 +4,6 @@ import Hero from '../../../components/user/hero/Hero';
 import about_1 from '../../../images/about_1.jpg';
 
 export default class UServiceContainer extends React.Component {
-	constructor(props) {
-		super(props);
-	}
-
 	render() {
 		return (
 			<React.Fragment>
@@ -19,7 +15,7 @@ export default class UServiceContainer extends React.Component {
 					<div className="sectionContainer">
 						<div className="uServiceContainer dflex">
 							<div className="uServiceImage">
-								<img src={about_1}></img>
+								<img src={about_1} alt="service1"></img>
 							</div>
 							<div className="uServiceContent">
 								<h3>Lorm Ipsum Dolor</h3>
@@ -37,7 +33,7 @@ export default class UServiceContainer extends React.Component {
 						</div>
 						<div className="uServiceContainer dflex">
 							<div className="uServiceImage">
-								<img src={about_1}></img>
+								<img src={about_1} alt="service2"></img>
 							</div>
 							<div className="uServiceContent">
 								<h3>Lorm Ipsum Dolor</h3>
@@ -55,7 +51,7 @@ export default class UServiceContainer extends React.Component {
 						</div>
 						<div className="uServiceContainer dflex">
 							<div className="uServiceImage">
-								<img src={about_1}></img>
+								<img src={about_1} alt="service3"></img>
 							</div>
 							<div className="uServiceContent">
 								<h3>Lorm Ipsum Dolor</h3>

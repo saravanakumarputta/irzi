@@ -15,3 +15,15 @@ export function approveTestimonial(testimonialId, data) {
 		isJSONPayload: true,
 	});
 }
+
+export function addTestimonial(testimonialObj) {
+	return callAPI({
+		url: '/api/testimonials',
+		headers: {
+			'Content-Type': 'application/json',
+		},
+		body: testimonialObj,
+		method: 'post',
+		isJSONPayload: true,
+	});
+}

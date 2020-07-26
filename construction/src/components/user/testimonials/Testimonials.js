@@ -9,7 +9,7 @@ export default function Testimonials(props) {
 		<div className="utestimonialContainer">
 			<div className="testimonialFeedback">
 				<blockquote>
-					<img src={person_3_sq} alt="userImage" />
+					{/* <img src={person_3_sq} alt="userImage" /> */}
 					<p>{feedback}</p>
 				</blockquote>
 			</div>

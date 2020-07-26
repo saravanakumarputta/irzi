@@ -15,7 +15,7 @@ export default class Projectdetail extends React.Component {
 		let _this = this;
 		getProject(projectId)
 			.then((res) => {
-				let { status, data } = res;
+				let { data } = res;
 				_this.setState({ project: data.data });
 			})
 			.catch((err) => {
@@ -30,10 +30,10 @@ export default class Projectdetail extends React.Component {
 				<h2 className="uProjectTitle">{title}</h2>
 				<div className="uProjectImageContainer dflex">
 					{images &&
-						images.map((image) => {
+						images.map((image, index) => {
 							return (
-								<div className="uProjectImage">
-									<img src={`/${image}`} alt="project Image" />
+								<div className="uProjectImage" key={index}>
+									<img src={`/${image}`} alt={`${index}_pimg`} />
 								</div>
 							);
 						})}

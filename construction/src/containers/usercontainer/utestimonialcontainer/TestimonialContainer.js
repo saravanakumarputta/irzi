@@ -22,7 +22,6 @@ class UTesimonialContainer extends React.Component {
 	}
 	render() {
 		let { testimonials } = this.props;
-		console.log(testimonials, '++++++++++');
 		return (
 			<div>
 				<Hero height="300">
