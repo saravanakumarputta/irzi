@@ -28,7 +28,7 @@ class UTesimonialContainer extends React.Component {
 					<h1>Testimonials</h1>
 				</Hero>
 				<div className="dflex flexwrap site-section sectionContainer">
-					<div className="dflex flexwrap">
+					
 						{Object.keys(testimonials).map((testimonialId) => {
 							let { name, company, designation, feedback } = testimonials[testimonialId];
 							return (
@@ -42,7 +42,7 @@ class UTesimonialContainer extends React.Component {
 								</div>
 							);
 						})}
-					</div>
+				
 				</div>
 			</div>
 		);
