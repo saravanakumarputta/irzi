@@ -18,7 +18,7 @@ export default class UServiceContainer extends React.Component {
 								<img src={about_1} alt="service1"></img>
 							</div>
 							<div className="uServiceContent">
-								<h3>Lorm Ipsum Dolor</h3>
+								<h3>Highway and road design</h3>
 								<h4>Welcome To Builder</h4>
 								<p>
 									Excellence in architecture engineering and intrior design Lorem Ipsum is simply
@@ -36,7 +36,7 @@ export default class UServiceContainer extends React.Component {
 								<img src={about_1} alt="service2"></img>
 							</div>
 							<div className="uServiceContent">
-								<h3>Lorm Ipsum Dolor</h3>
+								<h3>Structural design for bridges</h3>
 								<h4>Welcome To Builder</h4>
 								<p>
 									Excellence in architecture engineering and intrior design Lorem Ipsum is simply
@@ -49,12 +49,108 @@ export default class UServiceContainer extends React.Component {
 								</p>
 							</div>
 						</div>
+
 						<div className="uServiceContainer dflex">
 							<div className="uServiceImage">
 								<img src={about_1} alt="service3"></img>
 							</div>
 							<div className="uServiceContent">
-								<h3>Lorm Ipsum Dolor</h3>
+								<h3>Geotechnical and foundation design</h3>
+								<h4>Welcome To Builder</h4>
+								<p>
+									Excellence in architecture engineering and intrior design Lorem Ipsum is simply
+									dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy
+									text of the printing and typesetting industry.
+								</p>
+								<p>
+									Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+									Ipsum is simply dummy text of the printing and typesetting industry.
+								</p>
+							</div>
+						</div>
+
+						<div className="uServiceContainer dflex">
+							<div className="uServiceImage">
+								<img src={about_1} alt="service3"></img>
+							</div>
+							<div className="uServiceContent">
+								<h3>Structural (building) & infrastructure design</h3>
+								<h4>Welcome To Builder</h4>
+								<p>
+									Excellence in architecture engineering and intrior design Lorem Ipsum is simply
+									dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy
+									text of the printing and typesetting industry.
+								</p>
+								<p>
+									Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+									Ipsum is simply dummy text of the printing and typesetting industry.
+								</p>
+							</div>
+						</div>
+
+						<div className="uServiceContainer dflex">
+							<div className="uServiceImage">
+								<img src={about_1} alt="service3"></img>
+							</div>
+							<div className="uServiceContent">
+								<h3>Water supply and reticulation system</h3>
+								<h4>Welcome To Builder</h4>
+								<p>
+									Excellence in architecture engineering and intrior design Lorem Ipsum is simply
+									dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy
+									text of the printing and typesetting industry.
+								</p>
+								<p>
+									Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+									Ipsum is simply dummy text of the printing and typesetting industry.
+								</p>
+							</div>
+						</div>
+
+						<div className="uServiceContainer dflex">
+							<div className="uServiceImage">
+								<img src={about_1} alt="service3"></img>
+							</div>
+							<div className="uServiceContent">
+								<h3>Coastal design</h3>
+								<h4>Welcome To Builder</h4>
+								<p>
+									Excellence in architecture engineering and intrior design Lorem Ipsum is simply
+									dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy
+									text of the printing and typesetting industry.
+								</p>
+								<p>
+									Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+									Ipsum is simply dummy text of the printing and typesetting industry.
+								</p>
+							</div>
+						</div>
+
+						<div className="uServiceContainer dflex">
+							<div className="uServiceImage">
+								<img src={about_1} alt="service3"></img>
+							</div>
+							<div className="uServiceContent">
+								<h3>Flood mitigation design</h3>
+								<h4>Welcome To Builder</h4>
+								<p>
+									Excellence in architecture engineering and intrior design Lorem Ipsum is simply
+									dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy
+									text of the printing and typesetting industry.
+								</p>
+								<p>
+									Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+									Ipsum is simply dummy text of the printing and typesetting industry.
+								</p>
+							</div>
+						</div>
+
+						<div className="uServiceContainer dflex">
+							<div className="uServiceImage">
+								<img src={about_1} alt="service3"></img>
+							</div>
+							<div className="uServiceContent">
+								<h3>Project management consultant</h3>
 								<h4>Welcome To Builder</h4>
 								<p>
 									Excellence in architecture engineering and intrior design Lorem Ipsum is simply

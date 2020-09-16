@@ -24,10 +24,14 @@ export default function footer() {
 						<h3 className="footer-heading">
 							<span>Our Services</span>
 						</h3>
-						<div className="addrText">Project Managment</div>
-						<div className="addrText">Building Construction</div>
-						<div className="addrText">Building Renovation</div>
-						<div className="addrText">Remodeling</div>
+						<div className="addrText">Highway and road design</div>
+						<div className="addrText">Structural design for bridges</div>
+						<div className="addrText">Geotechnical and foundation design</div>
+						<div className="addrText">Structural (building) & infrastructure design</div>
+						<div className="addrText">Water supply and reticulation system </div>
+						<div className="addrText">Coastal design</div>
+						<div className="addrText">Flood mitigation design</div>
+						<div className="addrText">Project management consultant</div>
 					</div>
 					<div className="footer-section">
 						<h3 className="footer-heading">

@@ -133,26 +133,26 @@ export default class ContactUs extends React.Component {
 				<div className="cuPhilosphy">
 					<div className="sectionContainer dflex flexwrap alignAround cuPhilosphyContainer">
 						<div className="cuPhilosophyItem">
-							<h3>Our Philosophy</h3>
+							<h3>Our Vision</h3>
 							<p>
-								Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis recusandae, iure
-								repellat quis delectus ea? Dolore, amet reprehenderit.
+								To be a globally recognized corporation that provide best Structure and Infrastructure
+								solutions with quality engineering, innovative and reliable designs.
 							</p>
 						</div>
 						<div className="cuPhilosophyItem">
-							<h3>Our Principle</h3>
+							<h3>Our Mission</h3>
+							<p>
+								To achieve our vision through fairness, business ethics, global reach, technological
+								expertise, IRZI will build long term relationships with all our partners and employees.
+							</p>
+						</div>
+						{/* <div className="cuPhilosophyItem">
+							<h3>About Us</h3>
 							<p>
 								Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis recusandae, iure
 								repellat quis delectus ea? Dolore, amet reprehenderit.
 							</p>
-						</div>
-						<div className="cuPhilosophyItem">
-							<h3>Our Success</h3>
-							<p>
-								Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis recusandae, iure
-								repellat quis delectus ea? Dolore, amet reprehenderit.
-							</p>
-						</div>
+						</div> */}
 					</div>
 				</div>
 			</div>

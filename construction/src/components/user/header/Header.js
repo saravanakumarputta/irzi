@@ -108,7 +108,7 @@ export default function Header() {
 									<span className="myicon-email"></span>
 								</div>
 								<div className="text">
-									<span className="h4 d-block">mail@irzi.com</span>
+									<span className="h4 d-block">irzi@accs.my</span>
 									<span className="caption-text">43000, Kajang</span>
 								</div>
 							</div>
