@@ -101,7 +101,7 @@ function Projects(props) {
 		<div className="dflex projectContainer">
 			<div className="flexgrow projectTitle">{title}</div>
 			{images.map((image) => {
-				return <img src={`${image}`} alt={image} key={image} className="projectImage" />;
+				return <img src={image} alt={image} key={image} className="projectImage" />;
 			})}
 			<div className="separator"></div>
 			<span
