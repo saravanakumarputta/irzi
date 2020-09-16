@@ -33,7 +33,7 @@ export default class Projectdetail extends React.Component {
 						images.map((image, index) => {
 							return (
 								<div className="uProjectImage" key={index}>
-									<img src={`/${image}`} alt={`${index}_pimg`} />
+									<img src={image} alt={`${index}_pimg`} />
 								</div>
 							);
 						})}
