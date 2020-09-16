@@ -8,8 +8,8 @@ export default function WhatWeDo(props) {
 		<div className="wwdContainer sectionContainer">
 			<div className="dflex flexcolumn site-section">
 				<div className="ftLeadTextContainer">
-					<h3 class="ftTitle">What We Do</h3>
-					<h2 class="ftDescription">
+					<h3 className="ftTitle">What We Do</h3>
+					<h2 className="ftDescription">
 						We Are <strong>Leading Industry</strong> of Engineering. We Love What We Do
 					</h2>
 				</div>

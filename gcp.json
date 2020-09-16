@@ -1,0 +1,12 @@
+{
+	"type": "service_account",
+	"project_id": "mymernstackapp",
+	"private_key_id": "28ff52c9b6ff12ab67d00106b3dbeacdf28e10dc",
+	"private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQC0QUUYpI8lvYmJ\n6kjwO6q5CWB1eyo4pLJkYYLOCi2Zm1x1rQEhNrJ0pQ8tizNg87fCS1wuRqLHa3z2\n3m4x/yKZmk4IO0ed0oS1pNK4jLY3lTdIcRJTojCxTcitXeO7bTZCYEJneJGqIAf5\n/soaqaIdVGcp8UhgO5Y/BPjtTEi29SSLbeKlsNNu4w+z9xZ9V0riJomSakeQvwvD\nSLxpGkteZ6QOmrtdwYzJ+3NrAHpvedcDMRQtR2Ok8d/KezSzJ9u640hNUX7bxI0d\nfV1qyWkNumfIXesPm4SYPDzprDTKCwcxFjioySiYzMkEMvQ87U2SQo1BjUWOi5Ax\n0SqzMqEnAgMBAAECggEAI3n3Ie79V3Wy1Kh+O33az3k3eVfIywYrMBN6/ZdGO0W3\nEFgA8WsE+20jDBkp/wpon75aQadYUTxoB2RmtsNaqXWTpw4XvcmZofBzIqxbDpx5\nGXJbo4c34yWGegyRDinj9HNijl/N93g/aaYKW+4IAJLEjR42Wu5PV07guT96zjsj\nBEtegW/RuxN0SCvM+EhWWc+SjEcjksn5frgCW8zMU0Ff268sHCEzTpNkbPojVrbu\n9xcLQli+gBNXjSv7eV+kC6oabgBRFK8BjmbgLOmbyWTowIwxVIODXM0gYNQz+ASN\na0uHDFreUPSd6RDbOCVRF3n1SzeKDZzDJ9+U6/5NfQKBgQDzQtpjcEvuvcQS1V+W\nfk+dxV58qKb5VXGpyM5RLM5P0MsnwYI89ucVsx138+XihQ0IrmhSbdwBQl14MFR0\nmldBA48J/pOEHdoTKvdxQY7DMcadx8Wrvw2PGih/C9GDI26QIkR1xaFOB+HeJx7n\nwMxLePHH2Euw6esmQY64PqmczQKBgQC9scJPh4QCsW9Xnl/TWmQK8oczyXe66q6F\nAUklgYVeV4YEJQYADE3Rm3PtqgA9akQLyaytCg4YY1tccp1smjJpznAyRy9x1dwk\nUXGtP9lumCuEbbdSFgm4FCwcTQHd1h1+UKnrxmiXmE/koL9Llte3qnKa+WZ4qlOR\n3le6OLD1wwKBgDu3NZUjhABfZTqaVpTC/Rhl0wQXAqZCa1yahss2jI7bWoOv5SDC\nG4ggKCPCI7SvpLt01PcnMNK+T+OpOZJGMRUsonh5ngzYpyf9bDDJPxp7pZ4l5Eh8\n5f8zFK3bYNsoX4PSZavjj+1v0eqO/+80TPJaBkBgwHP1eFwzy60+9LQhAoGAWXNR\nZZ9JqNty3aZZGZkuQ9tJ1inSw9mWojGRBJanBW3QTHQI+EzVBVqAuDnKEyvhGo3n\nV1G+g9GWa2nAwk2UKECot4zJ2qw2OwoMyN2q8nPfUXtLTvIFc0BP7KiDkNA+6Cmx\ndvUArTutsOn8SvC+mGVP1bR1lcD713U5eR7yk3ECgYB51f+WJRrnoSIFgaGOp38R\nUv3mSusVEOtlD6HTjEEGYwsVhoxr4XDrMlDsrXKnW4F8PB3L2IC5L8d1OcyhTxJ8\ntYY8AOTIOJNYw+XIY0AzEeKcahEE6Xah3B0ktNCwqaqLkYv1VQO5z7dgxM4EATt4\nsOVayxDSACeDZz3LVJKQBQ==\n-----END PRIVATE KEY-----\n",
+	"client_email": "mymernstackapp@appspot.gserviceaccount.com",
+	"client_id": "100236991246074496089",
+	"auth_uri": "https://accounts.google.com/o/oauth2/auth",
+	"token_uri": "https://oauth2.googleapis.com/token",
+	"auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+	"client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/mymernstackapp%40appspot.gserviceaccount.com"
+}

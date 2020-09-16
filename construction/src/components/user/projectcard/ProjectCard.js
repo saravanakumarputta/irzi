@@ -7,10 +7,10 @@ export default function ProjectCard(props) {
 		<div className="upCard">
 			<div className="upContent">
 				<div>
-					<h2 class="upTitle">{title}</h2>
+					<h2 className="upTitle">{title}</h2>
 				</div>
 			</div>
-			<img src={`/${image}`} alt="projimg" />
+			<img src={`${image}`} alt="projimg" />
 		</div>
 	);
 }

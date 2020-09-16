@@ -25,7 +25,7 @@ exec(clientBuildCmdString, (err, stdout, stderr) => {
 	fs.copySync(path.join(__dirname, 'server/models'), path.join(__dirname, 'build/models'));
 	fs.copySync(path.join(__dirname, 'server/public'), path.join(__dirname, 'build/public'));
 	fs.copySync(path.join(__dirname, 'server/services'), path.join(__dirname, 'build/services'));
-	fs.copySync(path.join(__dirname, 'server/.env'), path.join(__dirname, 'build/.env'));
+	// fs.copySync(path.join(__dirname, 'server/.env'), path.join(__dirname, 'build/.env'));
 	fs.copySync(path.join(__dirname, 'server/package.json'), path.join(__dirname, 'build/package.json'));
 	fs.copySync(path.join(__dirname, 'server/server.js'), path.join(__dirname, 'build/server.js'));
 	fs.copySync(path.join(__dirname, 'server/app.js'), path.join(__dirname, 'build/app.js'));

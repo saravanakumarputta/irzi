@@ -1,25 +1,38 @@
 const express = require('express');
+const multerGoogleStorage = require('multer-google-storage');
 
 const multer = require('multer');
 
-const storage = multer.diskStorage({
-	destination: function (req, file, cb) {
-		cb(null, './server/public/images');
-	},
-	filename: function (req, file, cb) {
-		cb(null, file.originalname);
-	},
+// const storage = multer.diskStorage({
+// 	destination: function (req, file, cb) {
+// 		cb(null, './public/images');
+// 	},
+// 	filename: function (req, file, cb) {
+// 		cb(null, file.originalname);
+// 	},
+// });
+
+var uploadHandler = multer({
+	storage: multerGoogleStorage.storageEngine({
+		autoRetry: true,
+		bucket: 'asia.artifacts.mymernstackapp.appspot.com',
+		projectId: 'mymernstackapp',
+		keyFilename: './gcp.json',
+		filename: (req, file, cb) => {
+			cb(null, `/projectimages/${Date.now()}_${file.originalname}`);
+		},
+	}),
 });
 
-const fileFilter = (req, file, cb) => {
-	if (file.mimetype == 'image/png' || file.mimetype == 'image/jpeg') {
-		cb(null, true);
-	} else {
-		cb(null, false);
-	}
-};
+// const fileFilter = (req, file, cb) => {
+// 	if (file.mimetype == 'image/png' || file.mimetype == 'image/jpeg') {
+// 		cb(null, true);
+// 	} else {
+// 		cb(null, false);
+// 	}
+// };
 
-const upload = multer({ storage: storage, fileFilter: fileFilter });
+// const upload = multer({ storage: storage, fileFilter: fileFilter });
 
 const projectService = require('../services/projectService');
 
@@ -58,10 +71,11 @@ projectAPIs.get('/:id', async (req, res) => {
 	}
 });
 
-projectAPIs.post('/', checkAuth, upload.array('images'), async (req, res) => {
+projectAPIs.post('/', checkAuth, uploadHandler.any(), async (req, res) => {
 	try {
 		req.body.images = req.files.reduce((paths, file) => {
-			paths.push(`images/${file.originalname}`);
+			paths.push(`https://storage.googleapis.com/asia.artifacts.mymernstackapp.appspot.com${file.filename}`);
+			// paths.push(file.path);
 			return paths;
 		}, []);
 		let newProject = await projectService.addProject(req.body);
