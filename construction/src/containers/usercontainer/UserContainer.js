@@ -43,8 +43,28 @@ export default class UserContainer extends React.Component {
 								</Hero>
 								<WhatWeDo />
 								<WhyUs />
-								<FeaturedTestimonials />
 								<NewsLetter />
+								{/* <FeaturedTestimonials /> */}
+								<div className="cuPhilosphy">
+									<div className="sectionContainer dflex flexwrap alignAround cuPhilosphyContainer">
+										<div className="cuPhilosophyItem">
+											<h3>Our Vision</h3>
+											<p>
+												To be a globally recognized corporation that provide best Structure and
+												Infrastructure solutions with quality engineering, innovative and
+												reliable designs.
+											</p>
+										</div>
+										<div className="cuPhilosophyItem">
+											<h3>Our Mission</h3>
+											<p>
+												To achieve our vision through fairness, business ethics, global reach,
+												technological expertise, IRZI will build long term relationships with
+												all our partners and employees.
+											</p>
+										</div>
+									</div>
+								</div>
 							</div>
 						</Route>
 						<Route exact path="/projects" component={UProjectContainer} />

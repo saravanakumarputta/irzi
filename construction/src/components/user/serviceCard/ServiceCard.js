@@ -10,7 +10,7 @@ export default function ServiceCard(props) {
 			</div>
 			<div className="serviceContent">
 				<h3 className="serviceTitle">{title}</h3>
-				<p className="serviceDescription">{description}</p>
+				{/* <p className="serviceDescription">{description}</p> */}
 			</div>
 		</div>
 	);

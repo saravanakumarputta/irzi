@@ -22,21 +22,21 @@ export default function WhyChoose() {
 								<span className="myicon-oil-platform whyusServiceIcon"></span>
 								<div>
 									<h4 className="whyusServiceTitle">Expert in Buildings</h4>
-									<p className="whyusServiceText">Lorem ipsum dolor sit amet.</p>
+									{/* <p className="whyusServiceText">Lorem ipsum dolor sit amet.</p> */}
 								</div>
 							</div>
 							<div className="dflex alignVertical whyusServiceItem">
 								<span className="myicon-planning whyusServiceIcon"></span>
 								<div>
 									<h4 className="whyusServiceTitle">Leading in Planning</h4>
-									<p className="whyusServiceText">Lorem ipsum dolor sit amet.</p>
+									{/* <p className="whyusServiceText">Lorem ipsum dolor sit amet.</p> */}
 								</div>
 							</div>
 							<div className="dflex alignVertical whyusServiceItem">
 								<span className="myicon-compass whyusServiceIcon"></span>
 								<div>
 									<h4 className="whyusServiceTitle">Modern Design</h4>
-									<p className="whyusServiceText">Lorem ipsum dolor sit amet.</p>
+									{/* <p className="whyusServiceText">Lorem ipsum dolor sit amet.</p> */}
 								</div>
 							</div>
 						</div>

@@ -130,7 +130,7 @@ export default class ContactUs extends React.Component {
 						</div>
 					</div>
 				</div>
-				<div className="cuPhilosphy">
+				{/* <div className="cuPhilosphy">
 					<div className="sectionContainer dflex flexwrap alignAround cuPhilosphyContainer">
 						<div className="cuPhilosophyItem">
 							<h3>Our Vision</h3>
@@ -146,15 +146,15 @@ export default class ContactUs extends React.Component {
 								expertise, IRZI will build long term relationships with all our partners and employees.
 							</p>
 						</div>
-						{/* <div className="cuPhilosophyItem">
+						<div className="cuPhilosophyItem">
 							<h3>About Us</h3>
 							<p>
 								Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis recusandae, iure
 								repellat quis delectus ea? Dolore, amet reprehenderit.
 							</p>
-						</div> */}
+						</div>
 					</div>
-				</div>
+				</div> */}
 			</div>
 		);
 	}
