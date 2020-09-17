@@ -38,7 +38,7 @@ export default class UserContainer extends React.Component {
 							<div>
 								<Hero height="500">
 									<h1>
-										We are <strong>Leading</strong> Insdustry of engineers
+										We are <strong>Leading</strong> Industry of engineers
 									</h1>
 								</Hero>
 								<WhatWeDo />
