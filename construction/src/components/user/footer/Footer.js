@@ -20,7 +20,7 @@ export default function footer() {
 						</p>
 						<p>We are QEC Certified.</p>
 					</div>
-					<div className="footer-section">
+					{/* <div className="footer-section">
 						<h3 className="footer-heading">
 							<span>Our Services</span>
 						</h3>
@@ -32,7 +32,7 @@ export default function footer() {
 						<div className="addrText">Coastal design</div>
 						<div className="addrText">Flood mitigation design</div>
 						<div className="addrText">Project management consultant</div>
-					</div>
+					</div> */}
 					<div className="footer-section">
 						<h3 className="footer-heading">
 							<span>Contact</span>

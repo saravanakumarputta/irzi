@@ -43,7 +43,7 @@ export default class UserContainer extends React.Component {
 								</Hero>
 								<WhatWeDo />
 								<WhyUs />
-								<NewsLetter />
+								{/* <NewsLetter /> */}
 								{/* <FeaturedTestimonials /> */}
 								<div className="cuPhilosphy">
 									<div className="sectionContainer dflex flexwrap alignAround cuPhilosphyContainer">

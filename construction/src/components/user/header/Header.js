@@ -116,7 +116,7 @@ export default function Header() {
 					</div>
 				</div>
 
-				<div className={isReviewFormVisible ? 'reviewFormOpen' : 'reviewForm'}>
+				{/* <div className={isReviewFormVisible ? 'reviewFormOpen' : 'reviewForm'}>
 					<div className="reviewFormFreeze dflex">
 						<div className="reviewFormHolder">
 							<div className="reviewFormTitleContainer">
@@ -232,15 +232,15 @@ export default function Header() {
 							</div>
 						</div>
 					</div>
-				</div>
+				</div> */}
 
-				<div
+				{/* <div
 					className="review_icn"
 					onClick={() => {
 						setReviewFormVisible(!isReviewFormVisible);
 					}}>
 					<i></i>
-				</div>
+				</div> */}
 			</div>
 		</div>
 	);

@@ -3,6 +3,14 @@ import './UServiceContainer.css';
 import Hero from '../../../components/user/hero/Hero';
 import about_1 from '../../../images/about_1.jpg';
 
+import highway from '../../../images/highway.jpg';
+import bridges from '../../../images/bridges.jpeg';
+import water from '../../../images/water.jpg';
+import flood from '../../../images/flood.jpg';
+import coastal from '../../../images/coastal.jpg';
+import geotechnical from '../../../images/geotechnical.jpg';
+import structural from '../../../images/structural.jpeg';
+
 export default class UServiceContainer extends React.Component {
 	render() {
 		return (
@@ -15,7 +23,7 @@ export default class UServiceContainer extends React.Component {
 					<div className="sectionContainer">
 						<div className="uServiceContainer dflex">
 							<div className="uServiceImage">
-								<img src={about_1} alt="service1"></img>
+								<img src={highway} alt="highway"></img>
 							</div>
 							<div className="uServiceContent">
 								<h3>Highway and road design</h3>
@@ -33,7 +41,7 @@ export default class UServiceContainer extends React.Component {
 						</div>
 						<div className="uServiceContainer dflex">
 							<div className="uServiceImage">
-								<img src={about_1} alt="service2"></img>
+								<img src={bridges} alt="Structural design for bridges"></img>
 							</div>
 							<div className="uServiceContent">
 								<h3>Structural design for bridges</h3>
@@ -52,7 +60,7 @@ export default class UServiceContainer extends React.Component {
 
 						<div className="uServiceContainer dflex">
 							<div className="uServiceImage">
-								<img src={about_1} alt="service3"></img>
+								<img src={geotechnical} alt="Geotechnical and foundation design"></img>
 							</div>
 							<div className="uServiceContent">
 								<h3>Geotechnical and foundation design</h3>
@@ -71,7 +79,7 @@ export default class UServiceContainer extends React.Component {
 
 						<div className="uServiceContainer dflex">
 							<div className="uServiceImage">
-								<img src={about_1} alt="service3"></img>
+								<img src={structural} alt="Structural (building) & infrastructure design"></img>
 							</div>
 							<div className="uServiceContent">
 								<h3>Structural (building) & infrastructure design</h3>
@@ -90,7 +98,7 @@ export default class UServiceContainer extends React.Component {
 
 						<div className="uServiceContainer dflex">
 							<div className="uServiceImage">
-								<img src={about_1} alt="service3"></img>
+								<img src={water} alt="water"></img>
 							</div>
 							<div className="uServiceContent">
 								<h3>Water supply and reticulation system</h3>
@@ -109,7 +117,7 @@ export default class UServiceContainer extends React.Component {
 
 						<div className="uServiceContainer dflex">
 							<div className="uServiceImage">
-								<img src={about_1} alt="service3"></img>
+								<img src={coastal} alt="coastal"></img>
 							</div>
 							<div className="uServiceContent">
 								<h3>Coastal design</h3>
@@ -128,7 +136,7 @@ export default class UServiceContainer extends React.Component {
 
 						<div className="uServiceContainer dflex">
 							<div className="uServiceImage">
-								<img src={about_1} alt="service3"></img>
+								<img src={flood} alt="Flood"></img>
 							</div>
 							<div className="uServiceContent">
 								<h3>Flood mitigation design</h3>

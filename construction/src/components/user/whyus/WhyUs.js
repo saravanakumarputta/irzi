@@ -6,13 +6,13 @@ export default function WhyChoose() {
 	return (
 		<div className="whyusContainer">
 			<div className="site-section dflex flexcolumn sectionContainer">
-				<div className="">
+				<div>
 					<div className="dflex flexwrap alignVertical">
 						<div className="whyusImg">
 							<div className="whyusLeadContainer">
 								<h3 className="whyusLeadText">Why Choose Us</h3>
 								<h2 className="whyusLeadTitle">
-									More than <strong>50 years experience</strong> in industry
+									More than <strong>15 years experience</strong> in industry
 								</h2>
 							</div>
 							<img src={about_1} alt="about" />
