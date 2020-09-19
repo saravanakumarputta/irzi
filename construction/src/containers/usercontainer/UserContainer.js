@@ -69,7 +69,7 @@ export default class UserContainer extends React.Component {
 						</Route>
 						<Route exact path="/projects" component={UProjectContainer} />
 						<Route exact path="/projects/:id" component={UProjectDetailContainer} />
-						<Route exact path="/testimonials" component={UTestimonialContainer} />
+						{/* <Route exact path="/testimonials" component={UTestimonialContainer} /> */}
 						<Route exact path="/services" component={UServiceContainer} />
 						<Route exact path="/contact" component={ContactUs} />
 					</Switch>

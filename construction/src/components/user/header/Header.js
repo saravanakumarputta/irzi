@@ -2,25 +2,25 @@ import React from 'react';
 import './Header.css';
 import { NavLink } from 'react-router-dom';
 
-import TextBox from '../../common/textbox/TextBox';
-import TextArea from '../../common/textarea/TextArea';
+// import TextBox from '../../common/textbox/TextBox';
+// import TextArea from '../../common/textarea/TextArea';
 
-import { addTestimonial } from '../../../apicallers/TestimonailsAPI';
+// import { addTestimonial } from '../../../apicallers/TestimonailsAPI';
 
 import logo from '../../../images/logo.png';
 
 export default function Header() {
 	let [isNavbarVisible, setNavBarVisible] = React.useState(false);
-	let [isReviewFormVisible, setReviewFormVisible] = React.useState(false);
-	let [fullName, setFullName] = React.useState('');
-	let [fullNameErrMsg, setFullNameErrMsg] = React.useState('');
-	let [company, setCompany] = React.useState('');
-	let [companyErrMsg, setCompanyErrMsg] = React.useState('');
-	let [review, setReview] = React.useState('');
-	let [reviewErrMsg, setReviewErrMsg] = React.useState('');
-	let [designation, setDesignation] = React.useState('');
-	let [designationErrMsg, setDesignationErrMsg] = React.useState('');
-	let [submittedMsg, setSubmittedMsg] = React.useState('');
+	// let [isReviewFormVisible, setReviewFormVisible] = React.useState(false);
+	// let [fullName, setFullName] = React.useState('');
+	// let [fullNameErrMsg, setFullNameErrMsg] = React.useState('');
+	// let [company, setCompany] = React.useState('');
+	// let [companyErrMsg, setCompanyErrMsg] = React.useState('');
+	// let [review, setReview] = React.useState('');
+	// let [reviewErrMsg, setReviewErrMsg] = React.useState('');
+	// let [designation, setDesignation] = React.useState('');
+	// let [designationErrMsg, setDesignationErrMsg] = React.useState('');
+	// let [submittedMsg, setSubmittedMsg] = React.useState('');
 
 	return (
 		<div className="uHeaderContainer bg-light">
@@ -51,6 +51,24 @@ export default function Header() {
 								Home
 							</NavLink>
 							<NavLink
+								to="/about-us"
+								activeClassName="reMenuActive"
+								className="reMenuItems"
+								onClick={() => {
+									setNavBarVisible(false);
+								}}>
+								About Us
+							</NavLink>
+							<NavLink
+								to="/services"
+								activeClassName="reMenuActive"
+								className="reMenuItems"
+								onClick={() => {
+									setNavBarVisible(false);
+								}}>
+								Services
+							</NavLink>
+							<NavLink
 								to="/projects"
 								activeClassName="reMenuActive"
 								className="reMenuItems"
@@ -59,7 +77,7 @@ export default function Header() {
 								}}>
 								Projects
 							</NavLink>
-							<NavLink
+							{/* <NavLink
 								to="/testimonials"
 								activeClassName="reMenuActive"
 								className="reMenuItems"
@@ -67,7 +85,18 @@ export default function Header() {
 									setNavBarVisible(false);
 								}}>
 								Testimonials
+							</NavLink> */}
+
+							<NavLink
+								to="/team"
+								activeClassName="reMenuActive"
+								className="reMenuItems"
+								onClick={() => {
+									setNavBarVisible(false);
+								}}>
+								Team
 							</NavLink>
+
 							<NavLink
 								to="/contact"
 								activeClassName="reMenuActive"

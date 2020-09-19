@@ -16,12 +16,12 @@ export default function Navbar() {
 						Projects
 					</NavLink>
 
-					<NavLink activeClassName="navItemActive" className="navItem" to={`${url}/testimonials`}>
+					{/* <NavLink activeClassName="navItemActive" className="navItem" to={`${url}/testimonials`}>
 						Testimonials
-					</NavLink>
-					<NavLink activeClassName="navItemActive" className="navItem" to={`${url}/subscription`}>
+					</NavLink> */}
+					{/* <NavLink activeClassName="navItemActive" className="navItem" to={`${url}/subscription`}>
 						Emails
-					</NavLink>
+					</NavLink> */}
 				</div>
 			</div>
 			<div className="flexgrow h100 p2">
@@ -31,12 +31,12 @@ export default function Navbar() {
 							<NavLink activeClassName="navItemActiveres" className="navItem" to={`${url}/projects`}>
 								Projects
 							</NavLink>
-							<NavLink activeClassName="navItemActiveres" className="navItem" to={`${url}/testimonials`}>
+							{/* <NavLink activeClassName="navItemActiveres" className="navItem" to={`${url}/testimonials`}>
 								Testimonials
-							</NavLink>
-							<NavLink activeClassName="navItemActiveres" className="navItem" to={`${url}/subscription`}>
+							</NavLink> */}
+							{/* <NavLink activeClassName="navItemActiveres" className="navItem" to={`${url}/subscription`}>
 								Emails
-							</NavLink>
+							</NavLink> */}
 						</div>
 					</div>
 					<div className="flexgrow h100">

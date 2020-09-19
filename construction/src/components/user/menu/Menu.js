@@ -10,15 +10,21 @@ export default function Menu() {
 				<NavLink exact to="/" activeClassName="activeClass">
 					Home
 				</NavLink>
+				<NavLink to="/about-us" activeClassName="activeClass">
+					About Us
+				</NavLink>
 				<NavLink to="/services" activeClassName="activeClass">
 					Services
 				</NavLink>
 				<NavLink to="/projects" activeClassName="activeClass">
 					Projects
 				</NavLink>
-				<NavLink to="/testimonials" activeClassName="activeClass">
-					Testimonials
+				<NavLink to="/team" activeClassName="activeClass">
+					Team
 				</NavLink>
+				{/* <NavLink to="/testimonials" activeClassName="activeClass">
+					Testimonials
+				</NavLink> */}
 				<NavLink to="/contact" activeClassName="activeClass">
 					Contact Us
 				</NavLink>
