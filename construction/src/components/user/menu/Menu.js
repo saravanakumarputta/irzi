@@ -19,9 +19,9 @@ export default function Menu() {
 				<NavLink to="/projects" activeClassName="activeClass">
 					Projects
 				</NavLink>
-				<NavLink to="/team" activeClassName="activeClass">
+				{/* <NavLink to="/team" activeClassName="activeClass">
 					Team
-				</NavLink>
+				</NavLink> */}
 				{/* <NavLink to="/testimonials" activeClassName="activeClass">
 					Testimonials
 				</NavLink> */}

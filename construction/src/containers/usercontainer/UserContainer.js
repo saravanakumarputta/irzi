@@ -18,6 +18,8 @@ import UProjectContainer from './uprojectscontainer/UProjectContainer';
 import UServiceContainer from './uservicecontainers/UServiceContainer';
 import UTestimonialContainer from './utestimonialcontainer/TestimonialContainer';
 import UProjectDetailContainer from './uprojectdetailcontainer/UProjectDetailContainer';
+import UAboutUsContainer from './uaboutuscontainer/UAboutUsContainer';
+import UTeamContainer from './uteamcontainer/UTeamContainer';
 
 export default class UserContainer extends React.Component {
 	constructor(props) {
@@ -67,10 +69,12 @@ export default class UserContainer extends React.Component {
 								</div>
 							</div>
 						</Route>
+						<Route exact path="/about-us" component={UAboutUsContainer} />
 						<Route exact path="/projects" component={UProjectContainer} />
 						<Route exact path="/projects/:id" component={UProjectDetailContainer} />
 						{/* <Route exact path="/testimonials" component={UTestimonialContainer} /> */}
 						<Route exact path="/services" component={UServiceContainer} />
+						<Route exact path="/team" component={UTeamContainer} />
 						<Route exact path="/contact" component={ContactUs} />
 					</Switch>
 				</div>

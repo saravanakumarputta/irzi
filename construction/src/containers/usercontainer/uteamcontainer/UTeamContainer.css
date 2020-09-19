@@ -1,0 +1,58 @@
+/* .name {
+	color: #3b4896;
+}
+
+.designation {
+	color: #7d7d7d;
+	font-size: 14px;
+}
+
+.education,
+.membership {
+	margin: 1.5rem 0;
+}
+
+.education h4,
+.membership h4 {
+	margin-bottom: 10px;
+}
+
+.content {
+	font-size: 14px;
+}
+
+.teamInfo {
+	padding: 2rem 0;
+} */
+
+.personimg {
+	max-width: 100%;
+	height: auto;
+}
+
+.personcard {
+	width: 25%;
+}
+
+.personcontent {
+	text-align: center;
+	padding: 1rem 0;
+}
+
+.teamcontainer {
+	padding: 2rem 0;
+}
+
+.designation {
+	color: #3b4896;
+	padding: 0.5rem 0;
+}
+
+@media all and (max-width: 480px) {
+	.teamcontainer {
+		flex-direction: column;
+	}
+	.personcard {
+		width: 100%;
+	}
+}

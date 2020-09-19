@@ -87,7 +87,7 @@ export default function Header() {
 								Testimonials
 							</NavLink> */}
 
-							<NavLink
+							{/* <NavLink
 								to="/team"
 								activeClassName="reMenuActive"
 								className="reMenuItems"
@@ -95,7 +95,7 @@ export default function Header() {
 									setNavBarVisible(false);
 								}}>
 								Team
-							</NavLink>
+							</NavLink> */}
 
 							<NavLink
 								to="/contact"
