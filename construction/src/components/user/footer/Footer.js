@@ -3,6 +3,9 @@ import './Footer.css';
 import logo2 from '../../../images/logo2.png';
 import qec_logo from '../../../images/qec_logo.png';
 
+import facebook from '../../../images/facebook.png';
+import twitter from '../../../images/twitter.png';
+
 export default function footer() {
 	return (
 		<div className="footer">
@@ -48,6 +51,22 @@ export default function footer() {
 				</div>
 				<div className="copyright">
 					<p>Copyright All rights Reserved Irzi Engineers</p>
+				</div>
+				<div className="socialFeeds">
+					<div className="dflex alignHorizontal">
+						<a
+							href="https://www.facebook.com/Perunding-IRZI-Sdn-Bhd-1564523480508194"
+							target="_blank"
+							className="socialTag">
+							<img src={facebook} alt="facebook" className="socialIcon" />
+						</a>
+						<a
+							href="https://www.facebook.com/Perunding-IRZI-Sdn-Bhd-1564523480508194"
+							target="_blank"
+							className="socialTag">
+							<img src={twitter} alt="facebook" className="socialIcon" />
+						</a>
+					</div>
 				</div>
 			</div>
 		</div>
